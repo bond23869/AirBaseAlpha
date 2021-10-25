@@ -5,9 +5,131 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-color:black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#logo{
+  height: 100px;
+  width: 100px;
+  
+}
+
+html{
+  
+}
+
+
+
+.home{
+  background: black;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.footer, .page-wrap:after {
+  height: 100px; 
+}
+
+.footer{
+  background-color:black;
+}
+
+.smoMi{
+text-align: center;
+background-color:black;
+color:white;
+margin-top:5%;
+margin-bottom:8%;
+}
+
+.blockOfOpis{
+  
+  display: inline-block;
+  margin-left:13%;
+  width:30%;
+  height:auto; 
+  padding: 1em;
+  vertical-align: top;
+  text-align:center
+    
+}
+
+.blockOfOpis p{
+width:auto;
+height:10%;
+font-size:20px;
+color:white;
+}
+
+#blueTitle{
+  color:#2c699f;
+}
+
+h2{
+  font-size:40px;
+}
+h1{
+  font-size:48px;
+}
+
+.downDog{
+  margin-bottom:18%;
+}
+
+.boxy1{
+  display:inline-block;
+  left:5%;
+  position:relative;
+}
+.boxy2{
+  display:inline-block;
+  left:17%;
+  position:relative;
+}
+.boxy3{
+  display:inline-block;
+  left:28%;
+  position:relative;
+}
+.boxy4{
+  display:inline-block;
+  left:40%;
+  position:relative;
+}
+.fourHorseman p{
+  color:white;
+  font-size:16px;
+  text-align:center;
+}
+
+.fourHorseman img{
+  display: block;
+
+
+margin-left: auto;
+
+
+margin-right: auto;
+
+
+}
+
+#soldier{
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  width:90%;
 }
