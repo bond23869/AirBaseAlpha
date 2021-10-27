@@ -6,3 +6,5 @@ export { default as Kontakt } from "./Kontakt";
 export { default as Oprema } from "./Oprema";
 export { default as Pravilnik } from "./Pravilnik";
 export { default as Poligoni } from "./Poligoni";
+
+
