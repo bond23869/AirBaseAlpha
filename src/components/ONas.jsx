@@ -1,16 +1,14 @@
 import React from "react";
-import 'photoswipe/dist/photoswipe.css'
-import 'photoswipe/dist/default-skin/default-skin.css'
-import { Gallery, Item } from 'react-photoswipe-gallery'
-import video from "./videos/Compressed.mp4"
-import running from "./images/man_run.svg"
-import quality from "./images/okey.svg"
-import safety from "./images/shield.svg"
-import meh from "./images/smiley.svg"
-import soldier from "./images/airsoft-1.jpg"
+import video from "./videos/Compressed.mp4";
+import running from "./images/man_run.svg";
+import quality from "./images/okey.svg";
+import safety from "./images/shield.svg";
+import meh from "./images/smiley.svg";
+import test from "./images/soldd.jpg";
+
 function ONas() {
 
-  
+
 
   return (
     <div className="ONas">
@@ -18,10 +16,10 @@ function ONas() {
         <video autostart="true" autoPlay loop src={video} type="video/mp4" width="100%" height="15%" muted />
       </div>
 
-      <div className="del2 upDog">
-        
-          <h1 class="sectionAdress">O NAS</h1>
-        
+      <div className="del2 upPad">
+
+        <h1 className="sectionAdress">O NAS</h1>
+
         <div className="opis">
           <div className="blockOfOpis">
             <h2 id="blueTitle">KDO SMO</h2>
@@ -34,35 +32,12 @@ function ONas() {
           </div>
         </div>
       </div>
-      
-      <div className="soldier downDog">
-        <img src={soldier} id="soldier" alt="airsoft soldier" />
-       {/* <Gallery>
-      <Item
-        original=""
-        thumbnail=""
-        width="1024"
-        height="768"
-      >
-        {({ ref, open }) => (
-          <img ref={ref} onClick={open} src="" />
-        )}
-      </Item>
-      <Item
-        original="https://placekitten.com/1024/768?image=2"
-        thumbnail="https://placekitten.com/80/60?image=2"
-        width="1024"
-        height="768"
-      >
-        {({ ref, open }) => (
-          <img ref={ref} onClick={open} src="https://placekitten.com/80/60?image=2" />
-        )}
-      </Item>
-    </Gallery>
-        */}
+
+      <div className="soldier">
+
       </div>
 
-      <div className="miniDog"><h1 id="secondTitle"> NAJ METKI LETIJO</h1></div>
+      <div className="miniDog upPad"><h1 id="secondTitle"> NAJ METKI LETIJO</h1></div>
 
       <div className="fourHorseman downDog">
 
@@ -87,6 +62,35 @@ function ONas() {
         <span className="stretch"></span>
       </div>
 
+      <div className="Storitve upPad downDog">
+        <div className="paket">
+          <div className="paketNaslov">RAZLIČNI PAKETI</div>
+          <div ><img className="paketSlika" src={test}/></div>
+        </div>
+        <div className="paket">
+          <div className="paketNaslov">SPOSOJA OPREME</div>
+          <div ><img className="paketSlika" src={test}/></div>
+        </div>
+        <div className="paket">
+          <div className="paketNaslov">EPIC EVENTI</div>
+          <div ><img className="paketSlika" src={test}/></div>
+        </div>
+        <div className="paket">
+          <div className="paketNaslov">TRENINGI</div>
+          <div><img className="paketSlika" src={test}/></div>
+          <div className="sneakyText"><p>Yo mama so fat, she stole my half eaten donut</p></div>
+        </div>
+      </div>
+
+      <div className="Lokacija"></div>
+
+      <div className="quotes downDog">
+
+      </div>
+      <div className="rezervacija">
+        <h2>Rezervirajte svoj termin</h2>
+        <button></button>
+      </div>
     </div>
   );
 }

@@ -6,75 +6,75 @@ function Navigation(props) {
   return (
 
     <div className="navigation">
-      <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <nav className="navbar navbar-expand navbar-dark bg-dark">
       
           
-        <div class="container" id="navbar">
+        <div className="container" id="navbar">
         <img id="logo" src={logo} alt="AirBase Alpha logo"/>
-      <Link class="navbar-brand" to="/">
+      <Link className="navbar-brand" to="/">
             AirBase Alpha
           </Link>
           
           <div>
-            <ul class="navbar-nav ml-auto">
+            <ul className="navbar-nav ml-auto">
 
               <li
-                class={`nav-item  ${
+                className={`nav-item  ${
                   props.location.pathname === "/" ? "active" : ""
                 }`}
               >
-                <Link class="nav-link" to="/">
+                <Link className="nav-link" to="/">
                   O Nas
-                  <span class="sr-only">(current)</span>
+                  <span className="sr-only">(current)</span>
                 </Link>
               </li>
 
               <li
-                class={`nav-item  ${
+                className={`nav-item  ${
                   props.location.pathname === "/storitve" ? "active" : ""
                 }`}
               >
-                <Link class="nav-link" to="/storitve">
+                <Link className="nav-link" to="/storitve">
                   Storitve
                 </Link>
               </li>
 
               <li
-                class={`nav-item  ${
+                className={`nav-item  ${
                   props.location.pathname === "/oprema" ? "active" : ""
                 }`}
               >
-                <Link class="nav-link" to="/oprema">
+                <Link className="nav-link" to="/oprema">
                   Oprema
                 </Link>
               </li>
 
               <li
-                class={`nav-item  ${
+                className={`nav-item  ${
                   props.location.pathname === "/poligoni" ? "active" : ""
                 }`}
               >
-                <Link class="nav-link" to="/poligoni">
+                <Link className="nav-link" to="/poligoni">
                   Poligoni
                 </Link>
               </li>
 
               <li
-                class={`nav-item  ${
+                className={`nav-item  ${
                   props.location.pathname === "/pravilnik" ? "active" : ""
                 }`}
               >
-                <Link class="nav-link" to="/pravilnik">
+                <Link className="nav-link" to="/pravilnik">
                   Pravilnik
                 </Link>
               </li>
 
               <li
-                class={`nav-item  ${
+                className={`nav-item  ${
                   props.location.pathname === "/kontakt" ? "active" : ""
                 }`}
               >
-                <Link class="nav-link" to="/kontakt">
+                <Link className="nav-link" to="/kontakt">
                   Kontakt
                 </Link>
               </li>

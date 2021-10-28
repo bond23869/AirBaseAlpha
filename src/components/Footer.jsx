@@ -8,8 +8,8 @@ function Footer() {
 
     return (
     <div className="footer">
-      <footer class="py-5 bg-dark">
-        <div class="container">
+      <footer className="py-5 bg-dark">
+        <div className="container">
           
             <div>
             <h6>SOCIAL NETWORKS</h6>
