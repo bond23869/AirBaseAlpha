@@ -8,15 +8,16 @@ import outdoor from "./images/outdoor.jpg";
 import epicEvent from "./images/soldd.jpg";
 import sposoja from "./images/rentGear.jpg";
 import training from "./images/ar-min.jpg";
-
+import Quote from "./Quote";
+import Maps from "./Maps";
 
 function ONas() {
 
-
+  
 
   return (
     <div className="ONas">
-      <div className="home">
+      <div className="home downDog">
         <video autostart="true" autoPlay loop src={video} type="video/mp4" width="100%" height="15%" muted />
       </div>
 
@@ -42,14 +43,14 @@ function ONas() {
       </div>
       <div className="backgroundSoldier">
 
-        <div className="downDog upPad"><h1 id="secondTitle"> NAJ METKI LETIJO</h1></div>
+        <div className=" upPad"><h1 id="secondTitle"> NAJ METKI LETIJO</h1></div>
         <div className="fourHorseman downDog">
 
 
           <div className="boxy">
-            <embed src={running} width="200px" height="200px" alt="active" />
+            <embed className="runningMan" src={running} width="200px" height="200px" alt="active" />
 
-            <p>Podpiramo šport, razvoj in zdravje</p>
+            <p>Podpiramo šport, naravo in zdravje</p>
           </div>
           <div className="boxy">
             <embed src={quality} width="200px" height="200px" alt="Quality" />
@@ -73,70 +74,79 @@ function ONas() {
         <div className="upPad"><h1>STORITVE</h1></div>
 
         <div className="Storitve upPad downDog">
-          <div className="paket upPad">
+          <div className="paket" >
             <div className="paketNaslov miniDog">SPOSOJA OPREME</div>
-            <div ><img className="paketSlika" src={sposoja} /></div>
+            <div className="slikaPaket"><img className="paketSlika" src={sposoja} /></div>
             <div className="sneakyText">
               <p>SPOSOJA KOMPLETA</p>
               <p>ALI</p>
               <p>SPOSOJA SAMO SPECIFIČNIH ARTIKLOV</p>
+            </div>
+            <div className="lowerBottom">
+              </div>
               <div className="storitveButton">
                 <button className="button">SPOSOJA OPREME</button>
               </div>
-            </div>
           </div>
           <div className="paket">
             <div className="paketNaslov miniDog">RAZLIČNI POLIGONI</div>
-            <div ><img className="paketSlika" src={outdoor} /></div>
+            <div className="slikaPaket"><img className="paketSlika" src={outdoor} /></div>
             <div className="sneakyText">
               <p>OUTDOOR POLIGON</p>
-              <p>700 M^2 POVRŠINE</p>
+              
               <p>INDOOR POLIGON</p>
-              <p>120 M^2 POVRŠINE</p>
+              
+            </div>
               <div className="storitveButton">
                 <button className="button">OGLED POLIGONOV</button>
               </div>
-            </div>
           </div>
-          <div className="paket">
-            <div className="paketNaslov miniDog">EPIC EVENTI</div>
-            <div ><img className="paketSlika" src={epicEvent} /></div>
+          <div className="paket" >
+            <div className="paketNaslov miniDog">SPECIAL EVENTI</div>
+            <div className="slikaPaket" ><img className="paketSlika" src={epicEvent} /></div>
             <div className="sneakyText">
               <p>NAJBOLJŠI EVENTI V SLOVENIJI</p>
               <p>NEPOZABNE DOGODIVŠČINE</p>
+            </div>
               <div className="storitveButton">
                 <button className="button">OGLED EVENTOV</button>
               </div>
-            </div>
           </div>
-          <div className="paket">
+          <div className="paket" >
             <div className="paketNaslov miniDog">TRENINGI</div>
-            <div><img className="paketSlika" src={training} /></div>
+            <div className="slikaPaket"><img className="paketSlika" src={training} /></div>
             <div className="sneakyText">
-              <p>TRIKRAT TEDENSKO</p>
-              <p>VSE STAROSTNE SKUPINE</p>
-              <p>OGROMNO PRIDOBLJENEGA ZNANJA</p>
-              <div className="storitveButton">
+              <p>COMING SOON...</p>
+             
+              
+            </div>
+            <div className="storitveButton">
                 <button className="button">OGLED TRENINGOV</button>
               </div>
-            </div>
-
           </div>
         </div>
 
+        <div className="thirdPicture">
 
-        <div className="quotes downDog"></div>
+        </div>
+
+        
       </div>
 
-      <div className="Lokacija">
-
+      <div className="Lokacija upPad miniDog">
+        <Maps />
+      <div className="lokacijaText">
+        <h1>LOKACIJA</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem dolorum nobis consequatur labore suscipit facilis et dicta, quidem ducimus iure possimus veniam explicabo quod temporibus impedit eum dolor vel perspiciatis!</p>
+      </div>
+        
       </div>
 
       <div className="rezervacija downDog">
         <h2>Rezervirajte svoj termin</h2>
         <div class="buttons">
           <div class="containerButton">
-            <a href="https://twitter.com/masuwa1018" class="btn effect01" target="_blank"><span>Rezerviraj me</span></a>
+            <a href="https://twitter.com/masuwa1018" class="btn effect01" target="_blank"><span>Rezerviraj</span></a>
           </div>
         </div>
 

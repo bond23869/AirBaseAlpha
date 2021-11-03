@@ -14,11 +14,10 @@
 }
 
 
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -29,19 +28,67 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-#logo{
-  height: 100px;
-  width: 100px;
-  
+#secondTitle{
+  font-size:64px;
+  margin-bottom:4%;
 }
 
-
+#logo{
+  height:100px;
+  width:100px;
+  
+  margin: 1%2% 0.5% 2%;
+  cursor:pointer;
+}
 
 html{
   
 }
 
+.navList a{
+  font-size:20px;
+  color:white;
+  text-decoration: none;
+  font-family:blackOps;
+}
+
+.navList a:hover{
+  color:#2c699f;
+}
+
+.navigationBar{
+  width:100%;
+  height:auto;
+  background-color: #161616;
+  text-decoration: none;
+  
+}
+
+.rightNav{
+  display:inline-block;
+  height:50px;
+  margin-right:0;
+  width:70%;
+  text-align: right;
+}
+.rightNav li{
+  display:inline;
+  margin-left:20px;
+  
+}
+
+.navBrand{
+  font-size:28px;
+  color:#FFF;
+  font-family:blackOps;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.navBrand:hover{
+  text-decoration: none;
+  color:white; 
+}
 
 
 .home{
@@ -210,12 +257,14 @@ opacity:1;
 }
 
 .quotes{
-  padding-top:10%;
-  padding-bottom:10%;
-  border: 1px solid white;
-  width:80%;
+  padding-top:5%;
+  padding-bottom:5%;
+  border: 4px solid #2c699f;
+  border-radius: 25px;
+  width:70%;
   margin-left:auto;
   margin-right:auto;
+  box-shadow:8px 10px white;
 }
 
 
@@ -224,88 +273,79 @@ opacity:1;
   display:flex;
   justify-content: space-between;
   height:800px;
+  
+  
 }
 
 .paket{
   
-  width:20%;
-  height:75px;
-  
+  width:17%;
+  height:650px;
+  padding:10px;
+  border-radius: 25px;
+  border: 3px solid white;
+  background-color:black;
+  visibility:visible;
+  animation: fadeIn 3s;
+  color:white;
+  font-size:24px;
+  margin-bottom:3%;	
+  text-align: center;
   margin-left:auto;
   margin-right:auto;
-  transition:1.5s;
-  border-radius: 25px;
-  padding:20px;
+  transition:1s;
 }
 
+.paket:hover{
+  transform:scale(1.1)
+}
 
 .sneakyText{
   color:white;
-  vertical-align: top;
-  visibility: hidden;
+  
   padding-top:5%;
+  font-size:80%;
+  height:40%;
 }
-
-
-.paket:hover{
-  width:22%;
-  height:650px;
-  border:4px solid white;
-  background-color:black;
-}
-
-.paket:hover p{
-  visibility:visible;
-  animation: fadeIn 3s;
-  color:white;
-  font-size:24px;
-  margin-bottom:3%;	
-  text-align: center;
-  
-}
-.paket:hover .storitveButton{
-  visibility:visible;
-  animation: fadeIn 3s;
-  color:white;
-  font-size:24px;
-  margin-bottom:3%;	
-  text-align: center;
-  
-}
-
-
 
 
 .paketNaslov{
 width: 100%;
-height:75px;
+height:10%;
 padding-top:5%;
 padding-bottom:3%;
 margin-left:auto;
 margin-right:auto;
-vertical-align: top;
+vertical-align:top;
 text-align: center;
-font-size:30px;
+font-size:auto;
 font-family:blackOps;
 color:black;
 background-color: white;
+border-radius: 25px;;
 }
 
 
 .paketNaslov p{
   vertical-align: middle;
 }
-
-
+.slikaPaket{
+  width:100%;
+  height:30%;
+}
 .paketSlika{
   width:100%;
   height:100%;
-  
+  border-radius: 25px;
 
   
 }
 
-
+.storitveButton{
+  height:20%;
+  margin-top:auto;
+  margin-bottom:auto;
+}
 
 
 
@@ -438,7 +478,252 @@ background-color: white;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  
-  height: 400px;
+  height: 600px;
   width:100%;
+}
+
+.thirdPicture{
+  height:600px;
+  width:100%;
+  background-image: url("./components/images/qqq-min.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.spicyFooter div{
+  vertical-align: top;
+  width:30%;
+}
+
+.footerLokacija{
+  text-align:middle;
+}
+
+
+.storitveHeader{
+  width:60%;
+  margin-top:5%;
+}
+
+.storitveHeader p{
+  font-size:16px;
+  color:white;
+  text-align: center;
+  margin-left:5%;
+  margin-right:5%;
+}
+
+.threeMuskateers{
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+  
+}
+
+.muskateer{
+  display:flexbox;
+  width:90%;
+  height:600px;
+  border: 3px solid white;
+  border-radius:25px;
+  margin-top:5%;
+  margin-right:5%;
+}
+
+.muskateer h3{
+  font-family: blackOps;
+  color: #2c699f;
+  text-align:center;
+  padding:20px;
+
+}
+
+.muskateer p{
+  color:white;
+  font-size:24px;
+  width:90%;
+  text-align:justify;
+  margin-left:auto;
+  margin-right:auto;
+  
+}
+
+.muskateer span{
+  
+  color:white;
+  font-size:26px;
+  transition:0.3s ease;
+  width: 100%;
+  
+}
+
+.muskateer span:hover{
+  color:gray;
+  
+}
+
+.muskateer li{
+  color:white;
+  font-size:22px;
+}
+
+#bottom{
+  vertical-align: bottom;
+}
+
+.flyToTrening a{
+  
+  border: 3px solid #2c699f;
+  padding: 10px;
+  border-radius: 25px;
+
+  
+}
+.flyToTrening{
+  cursor: pointer;
+  
+}
+
+.left{
+margin-left:28%;
+}
+
+.right{
+margin-left:15%;
+}
+.middle{
+margin-left:15%;
+}
+
+.storTitle{
+width:100%;
+background-color:#333;
+height:100px;
+display:inline-block;
+vertical-align: center;
+}
+
+.storTitle h1{
+margin-top:20px;
+}
+
+.treningPhoto{
+  background-image:url(./components/images/soldd.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  height: 600px;
+  width: 100%;
+}
+
+.ekipniPhoto{
+  background-image:url(./components/images/teambuilding.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  height: 600px;
+  width: 100%;
+}
+
+.splosniPhoto{
+  background-image:url(./components/images/navadnispopadi.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  height: 600px;
+  width: 100%;
+}
+
+.indoorPoligon{
+  display:inline-block;
+}
+
+.indoorPoligonText{
+  display: inline-block;
+   width:40%;
+   height:500px;
+  }
+
+.indoorPoligonSlika{
+  display: inline-block;
+  width:60%;
+  height:500px;
+}
+
+.indoorSlika{
+  width:80%;
+  height:120%;
+   
+}
+
+.indoorPoligonText p{
+  width:80%;
+  text-align: justify;
+  font-size:18px;
+  color:white;
+  margin-left:auto;
+  margin-right:auto;
+  
+}
+
+.googleMapsVirtualka{
+  width:100%;
+  height:600px;
+  display:flex;
+  justify-content: space-between;
+}
+.virtualniSprehod{
+  width:50%;
+  height:100%;
+  
+  
+}
+.virtualniSprehod p{
+  text-align: center;
+  font-size:22px;
+  color:white;
+
+}
+
+
+.indoorVirtual{
+
+  width:80%;
+  height:80%;
+  margin-left:10%;
+  margin-right:auto;
+}
+
+.maps{
+  width:60%;
+  height:600px;
+  padding:50px;
+  
+
+}
+
+.maps iframe{
+  margin-left:auto;
+  margin-right:auto;
+  height:100%;
+  width:80%;
+  border-radius: 25px;
+  
+}
+
+.Lokacija{
+  display:flex;
+  justify-content: space-between;
+  text-align:center;
+  
+}
+
+.lokacijaText{
+  width:40%;
+}
+
+.lokacijaText p{
+  font-size:22px;
 }
