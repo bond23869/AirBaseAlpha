@@ -13,8 +13,8 @@ function Storitve() {
 
         <div className="threeMuskateers">
           <div className="muskateer">
-            <div><h3>AIRSOFT TRENINGI</h3></div>
-            <div><ul>
+            <div className="topMusk"><h3>AIRSOFT TRENINGI</h3></div>
+            <div className="middleMusk"><ul>
               <li>Spoznava z opremo</li>
               <li>Poliranje osnov</li>
               <li>Osnovne in napredne taktike</li>
@@ -22,31 +22,35 @@ function Storitve() {
               <li>In veliko več</li>
             </ul>
             </div>
-            <div><span className="flyToTrening left"><Link to="trening" spy={true} smooth={true}>TRENING</Link></span></div>
+            <div className="bottomMusk"><span className="flyToTrening left"><Link to="trening" spy={true} smooth={true}>TRENING</Link></span></div>
             </div>
             
           <div className="muskateer">
 
-          <div><h3>EKIPNI SPOPADI</h3></div>
-            <div><ul>
+          <div className="topMusk"><h3>EKIPNI SPOPADI</h3></div>
+            <div className="middleMusk"><ul>
               <li>Rojstnodnevne zabave</li>
               <li>Team building</li>
               <li>Privat spopadi s svojo lastno ekipo (min. 6 ljudi)</li>
               <li>Testiranje različnih tipov iger</li>
             </ul>
+            <p >Termini so rezervirani za sobote</p>
             </div>
-            <div><p id="bottom">Termini so rezervirani za sobote</p></div>
-            <div className="bottom">
+            
+            <div className="bottomMusk">
             <span className="flyToTrening middle"><Link to="ekipniSpopadi" spy={true} smooth={true}>EKIPNI SPOPAD</Link></span>
             </div>
             </div>
           
             
           <div className="muskateer">
-            <div><h3>SPLOŠNI SPOPADI</h3></div>
-            <div><p> Dobrodošli vsi, nedelja razervirana samo za max 30 oseb na spopad v poletnem času, 
-              <div><span className="flyToTrening right"><Link to="splosniSpopadi" spy={true} smooth={true}>SPLOŠNI SPOPAD</Link></span></div>
-              v outdoor prostoru in max 16 oseb v zimskem času v indoor prostoru.</p>  </div>
+            <div className="topMusk"><h3>SPLOŠNI SPOPADI</h3></div>
+            <div ><p> Dobrodošli vsi, nedelja razervirana samo za max 30 oseb na spopad v poletnem času, v outdoor prostoru in max 16 oseb v zimskem času v indoor prostoru.</p> 
+              
+               </div>
+               <div className="bottomMusk">
+                <span className="flyToTrening right"><Link to="splosniSpopadi" spy={true} smooth={true}>SPLOŠNI SPOPAD</Link></span>
+                </div>
           </div>
           </div>
 
@@ -60,17 +64,18 @@ function Storitve() {
           <div className="storTitle"><h1>TRENINGI</h1></div>
           <div className="treningPhoto"></div>
           <div className="treningText"></div>
-        </div>
-
-        <div id="ekipniSpopadi" className="ekipniSpopadi downDog upDog">
-        <div className="storTitle"><h1>EKIPNI SPOPADI</h1></div>
-        <div className="ekipniPhoto"></div>
+          <h2 className="upPad">COMING SOON...</h2>
         </div>
 
         <div id="splosniSpopadi" className="splosniSpopadi upDog downDog">
         <div className="storTitle"><h1>SPLOŠNI SPOPADI</h1></div>
         <div className="splosniPhoto"></div>
         </div>
+        <div id="ekipniSpopadi" className="ekipniSpopadi downDog upDog">
+        <div className="storTitle"><h1>EKIPNI SPOPADI</h1></div>
+        <div className="ekipniPhoto"></div>
+        </div>
+
 </div>
     
     

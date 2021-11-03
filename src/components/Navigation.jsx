@@ -1,11 +1,30 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import logo from './images/logo.png';
+import phone from './images/phone.svg';
+import clock from './images/clock.svg';
+import mail from './images/mail.svg';
+import fb from './images/fb.png';
+import tktk from './images/tiktok.png';
+import insta from './images/insta.png';
 
 function Navigation(props) {
   return (
 
     <div className="navigation">
+
+      <div className="blackBar">
+        <div className="blackKontakt">
+          <div className="bKontakt"><embed src={phone}/><p>+386 41 566 716</p></div>
+          <div className="bKontakt"><embed src={clock}/><a src="">Rezervacija termina</a></div>
+          <div className="bKontakt"><embed src={mail}/><p>airsoftbasealpha@gmail.com</p></div>
+        </div>
+        <div className="blackMedija">
+          <a href="https://www.facebook.com/marketplace/?ref=app_tab" ><img src={fb}></img></a>
+          <a href="https://www.instagram.com/airbasealpha/" ><img src={insta}></img></a>
+          <a href="https://www.tiktok.com/@airbasealpha" ><img src={tktk}></img></a>
+        </div>
+      </div>
       <nav className="navigationBar">
       
         <div className="navigationBar">

@@ -74,7 +74,7 @@ function ONas() {
         <div className="upPad"><h1>STORITVE</h1></div>
 
         <div className="Storitve upPad downDog">
-          <div className="paket" >
+          <div className="paket leftBoy" >
             <div className="paketNaslov miniDog">SPOSOJA OPREME</div>
             <div className="slikaPaket"><img className="paketSlika" src={sposoja} /></div>
             <div className="sneakyText">
@@ -112,7 +112,7 @@ function ONas() {
                 <button className="button">OGLED EVENTOV</button>
               </div>
           </div>
-          <div className="paket" >
+          <div className="paket rightBoy">
             <div className="paketNaslov miniDog">TRENINGI</div>
             <div className="slikaPaket"><img className="paketSlika" src={training} /></div>
             <div className="sneakyText">

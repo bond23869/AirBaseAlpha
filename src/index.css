@@ -33,6 +33,67 @@ code {
   margin-bottom:4%;
 }
 
+.blackBar{
+  
+  height:60px;
+  width:100%;
+  display:flex;
+  color:gray;
+}
+
+
+.blackBar embed{
+  height:25px;
+  width:25;
+  vertical-align: middle;
+  
+  
+}
+
+
+.blackMedija img{
+  width:40px;
+  height:40px;
+  margin-left:5px;
+  margin-right:5px;
+  margin-top:4%;
+  cursor:pointer;
+}
+.blackKontakt{
+  width:100%;
+  display:inline-block;
+  margin-left:20%;
+  
+}
+.blackMedija{
+  width:20%;
+}
+
+
+
+.bKontakt{
+  display:inline-block;
+  width:25%;
+  height:100%;
+  padding-top:1%;
+}
+
+.bKontakt p{
+  display: inline;
+  color:gray;
+  font-size:18px;
+  margin-left:10px;
+}
+
+.bKontakt a{
+  cursor:pointer;
+  margin-left:10px;
+  color:white;
+  
+}
+
+
+
 #logo{
   height:100px;
   width:100px;
@@ -279,7 +340,7 @@ opacity:1;
 
 .paket{
   
-  width:17%;
+  width:18%;
   height:650px;
   padding:10px;
   border-radius: 25px;
@@ -291,9 +352,15 @@ opacity:1;
   font-size:24px;
   margin-bottom:3%;	
   text-align: center;
-  margin-left:auto;
-  margin-right:auto;
+  
   transition:1s;
+}
+
+.leftBoy{
+  margin-left:10%;
+}
+.rightBoy{
+  margin-right:10%;
 }
 
 .paket:hover{
@@ -345,9 +412,16 @@ border-radius: 25px;;
   height:20%;
   margin-top:auto;
   margin-bottom:auto;
+  
 }
 
+.storitveButton button{
+  transition:0.3s;
+}
 
+.storitveButton button:hover{
+  color:black;
+}
 
 
 
@@ -555,7 +629,8 @@ border-radius: 25px;;
   color:white;
   font-size:26px;
   transition:0.3s ease;
-  width: 100%;
+  text-align:center;
+
   
 }
 
@@ -569,9 +644,7 @@ border-radius: 25px;;
   font-size:22px;
 }
 
-#bottom{
-  vertical-align: bottom;
-}
+
 
 .flyToTrening a{
   
@@ -586,16 +659,7 @@ border-radius: 25px;;
   
 }
 
-.left{
-margin-left:28%;
-}
 
-.right{
-margin-left:15%;
-}
-.middle{
-margin-left:15%;
-}
 
 .storTitle{
 width:100%;
@@ -727,3 +791,17 @@ margin-top:20px;
 .lokacijaText p{
   font-size:22px;
 }
+
+.topMusk{
+  height:15%;
+}
+
+.middleMusk{
+  height:45%;
+}
+
+.bottomMusk{
+  height:40%;
+
+}
+
