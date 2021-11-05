@@ -1,3 +1,4 @@
+/*
 import React, { useState } from 'react';
 import {css,cx} from '@emotion/css';
 
@@ -96,3 +97,4 @@ const Quote = () => {
 
 
 export default Quote;
+*/

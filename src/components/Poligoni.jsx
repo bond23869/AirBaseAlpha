@@ -4,8 +4,10 @@ import indoorSlika from "./images/testIndoorPhoto.jpg";
 function Poligoni() {
   return (
     <div className="contact">
-      <div className="title upPad miniDog">
-          <h1 className="storTitle">INDOOR POLIGON</h1>
+      <div className="upPad miniDog">
+      <div className="storTitle">
+          <h1>INDOOR POLIGON</h1>
+      </div>
       </div>
     <div className="indoorPoligon miniDog">
       <div className="indoorPoligonText">

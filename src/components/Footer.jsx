@@ -14,7 +14,7 @@ function Footer() {
             <div>
             <h6>SOCIAL NETWORKS</h6>
             <a href="https://www.instagram.com/airbasealpha/"><img src={instagram} alt="instagram"></img></a>
-            <a href="https://www.facebook.com/marketplace/?ref=app_tab"><img src={facebook} alt="facebook"></img></a>
+            <a href="https://www.facebook.com/airbasealfa/"><img src={facebook} alt="facebook"></img></a>
             <a href="https://www.tiktok.com/@airbasealpha"><img src={tiktok} alt="tiktok"></img></a>
             </div>
             

@@ -39,7 +39,10 @@ code {
   width:100%;
   display:flex;
   color:gray;
+  justify-content: space-between;
+  font-size:18px;
 }
+
 
 
 .blackBar embed{
@@ -52,17 +55,21 @@ code {
 
 
 .blackMedija img{
-  width:40px;
-  height:40px;
+  width:30px;
+  height:30px;
   margin-left:5px;
   margin-right:5px;
-  margin-top:4%;
+  margin-top:7%;
+  
   cursor:pointer;
 }
 .blackKontakt{
   width:100%;
-  display:inline-block;
-  margin-left:20%;
+  display:flex;
+  justify-content: space-between;
+  margin-left:10%;
+  margin-right:10%;
+  
   
 }
 .blackMedija{
@@ -73,9 +80,10 @@ code {
 
 .bKontakt{
   display:inline-block;
-  width:25%;
+  width:33%;
   height:100%;
-  padding-top:1%;
+  margin-top:1.5%;
+  vertical-align: middle;
 }
 
 .bKontakt p{
@@ -83,6 +91,7 @@ code {
   color:gray;
   font-size:18px;
   margin-left:10px;
+  
 }
 
 .bKontakt a{
@@ -91,7 +100,9 @@ code {
   color:white;
   
 }
-
+.bKontakt a:hover{
+  color:white;
+}
 
 
 #logo{
@@ -106,11 +117,17 @@ html{
   
 }
 
+.navList{
+  margin-top:1%;
+  margin-bottom:auto;
+}
+
 .navList a{
   font-size:20px;
   color:white;
   text-decoration: none;
   font-family:blackOps;
+  vertical-align: middle;
 }
 
 .navList a:hover{
@@ -122,16 +139,24 @@ html{
   height:auto;
   background-color: #161616;
   text-decoration: none;
-  
+  display:flex;
+  justify-content: space-between;
 }
 
 .rightNav{
+  margin-top:auto;
+  margin-bottom:auto;
   display:inline-block;
   height:50px;
-  margin-right:0;
-  width:70%;
+  width:auto;
+  margin-right:auto;
+  margin-left:auto;
   text-align: right;
+  vertical-align: middle;;
 }
+
+
+
 .rightNav li{
   display:inline;
   margin-left:20px;
@@ -144,6 +169,8 @@ html{
   font-family:blackOps;
   text-decoration: none;
   vertical-align: middle;
+  margin-top:auto;
+  margin-bottom:auto;
 }
 
 .navBrand:hover{
@@ -385,7 +412,7 @@ margin-left:auto;
 margin-right:auto;
 vertical-align:top;
 text-align: center;
-font-size:auto;
+font-size: 90%;
 font-family:blackOps;
 color:black;
 background-color: white;
@@ -417,6 +444,9 @@ border-radius: 25px;;
 
 .storitveButton button{
   transition:0.3s;
+  height:60%;
+  border-radius:10px;
+  
 }
 
 .storitveButton button:hover{
@@ -597,13 +627,14 @@ border-radius: 25px;;
 }
 
 .muskateer{
-  display:flexbox;
+  
   width:90%;
   height:600px;
   border: 3px solid white;
   border-radius:25px;
   margin-top:5%;
   margin-right:5%;
+
 }
 
 .muskateer h3{
@@ -656,8 +687,11 @@ border-radius: 25px;;
 }
 .flyToTrening{
   cursor: pointer;
-  
+  margin-top:auto;
+  margin-bottom:auto;
+ 
 }
+
 
 
 
@@ -786,6 +820,8 @@ margin-top:20px;
 
 .lokacijaText{
   width:40%;
+  color:white;
+  margin:5%;
 }
 
 .lokacijaText p{
@@ -793,15 +829,21 @@ margin-top:20px;
 }
 
 .topMusk{
-  height:15%;
+  height:auto;
 }
 
 .middleMusk{
-  height:45%;
+  height:auto;
+  font-size:14px;
+  display:block;
 }
 
 .bottomMusk{
-  height:40%;
-
+  height: auto;
+  display:block;
+  height:auto;
 }
-
+.bottomMusk span{
+  display:block;
+  
+}

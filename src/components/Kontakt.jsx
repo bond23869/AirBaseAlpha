@@ -1,28 +1,23 @@
 import React from "react";
+import Maps from "./Maps";
 
 function Kontakt() {
   return (
     <div className="contact">
-      <div className="container">
-        <div className="row align-items-center my-5">
-          <div className="col-lg-7">
-            <img
-              className="img-fluid rounded mb-4 mb-lg-0"
-              src="http://placehold.it/900x400"
-              alt=""
-            />
-          </div>
-          <div className="col-lg-5">
-            <h1 className="font-weight-light">Kontakt</h1>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
-          </div>
-        </div>
+      
+      <div className="storTitle">
+        <h1>KONTAKT</h1>
       </div>
+
+      <div className="Lokacija upPad miniDog">
+        <Maps />
+      <div className="lokacijaText upPad">
+        <h1>LOKACIJA PISARNE</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem dolorum nobis consequatur labore suscipit facilis et dicta, quidem ducimus iure possimus veniam explicabo quod temporibus impedit eum dolor vel perspiciatis!</p>
+      </div>
+        
+      </div>
+      
     </div>
   );
 }

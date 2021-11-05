@@ -14,7 +14,8 @@ function Storitve() {
         <div className="threeMuskateers">
           <div className="muskateer">
             <div className="topMusk"><h3>AIRSOFT TRENINGI</h3></div>
-            <div className="middleMusk"><ul>
+            <div className="middleMusk">
+              <ul>
               <li>Spoznava z opremo</li>
               <li>Poliranje osnov</li>
               <li>Osnovne in napredne taktike</li>
@@ -29,8 +30,8 @@ function Storitve() {
 
           <div className="topMusk"><h3>EKIPNI SPOPADI</h3></div>
             <div className="middleMusk"><ul>
-              <li>Rojstnodnevne zabave</li>
-              <li>Team building</li>
+              <li>Rojstnodnevne zabave in team-buildingi</li>
+              
               <li>Privat spopadi s svojo lastno ekipo (min. 6 ljudi)</li>
               <li>Testiranje različnih tipov iger</li>
             </ul>

@@ -20,7 +20,7 @@ function Navigation(props) {
           <div className="bKontakt"><embed src={mail}/><p>airsoftbasealpha@gmail.com</p></div>
         </div>
         <div className="blackMedija">
-          <a href="https://www.facebook.com/marketplace/?ref=app_tab" ><img src={fb}></img></a>
+          <a href="https://www.facebook.com/airbasealfa/" ><img src={fb}></img></a>
           <a href="https://www.instagram.com/airbasealpha/" ><img src={insta}></img></a>
           <a href="https://www.tiktok.com/@airbasealpha" ><img src={tktk}></img></a>
         </div>
