@@ -41,7 +41,7 @@ function ONas() {
       <div className="soldier">
 
       </div>
-      <div className="backgroundSoldier">
+      <div >
 
         <div className=" upPad"><h1 id="secondTitle"> NAJ METKI LETIJO</h1></div>
         <div className="fourHorseman downDog">

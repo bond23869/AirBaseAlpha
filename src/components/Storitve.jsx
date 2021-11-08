@@ -20,6 +20,7 @@ function Storitve() {
               <li>Poliranje osnov</li>
               <li>Osnovne in napredne taktike</li>
               <li>Testiranje različnih tipov iger</li>
+              <li>Komunikacija preko woki tokijev</li>
               <li>In veliko več</li>
             </ul>
             </div>
@@ -46,11 +47,11 @@ function Storitve() {
             
           <div className="muskateer">
             <div className="topMusk"><h3>SPLOŠNI SPOPADI</h3></div>
-            <div ><p> Dobrodošli vsi, nedelja razervirana samo za max 30 oseb na spopad v poletnem času, v outdoor prostoru in max 16 oseb v zimskem času v indoor prostoru.</p> 
+            <div className="middleMusk"><p> Dobrodošli vsi, nedelja razervirana samo za max 30 oseb na spopad v poletnem času, v outdoor prostoru in max 16 oseb v zimskem času v indoor prostoru.</p> 
               
                </div>
                <div className="bottomMusk">
-                <span className="flyToTrening right"><Link to="splosniSpopadi" spy={true} smooth={true}>SPLOŠNI SPOPAD</Link></span>
+                <span className="flyToTrening "><Link to="splosniSpopadi" spy={true} smooth={true}>SPLOŠNI SPOPAD</Link></span>
                 </div>
           </div>
           </div>
