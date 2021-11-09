@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from 'react-scroll';
+import DiscordInvite from "react-discord-invite";
 
 function Storitve() {
   return (
@@ -62,22 +63,36 @@ function Storitve() {
           
         </div>
 
+        
+
+        <div id="splosniSpopadi" className="splosniSpopadi upDog downDog">
+        <div className="storTitle"><h1>SPLOŠNI SPOPADI</h1></div>
+        <div className="splosniPhoto minierDog"></div>
+        <div className="splosniText">
+        <h2>Spopadi, kjer so vabljeni vsi airsoft navdušenci!</h2>
+        <p>Redni spopadi se prirejajo vsak vikend</p>
+        <p>Dopoldanski in Popoldanski termin</p>
+        <p>Več si lahko pogledate na Discordu: </p>
+        <p>Rezervirajte svoje mesto!</p>
+        </div>
+        <DiscordInvite palette="light" guild="846714265738280972"/>
+        <div class="buttons">
+          <div class="containerButton">
+            <a href="https://twitter.com/masuwa1018" class="btn effect01" target="_blank"><span>Rezerviraj</span></a>
+          </div>
+        </div>
+        
+        </div>
+        <div id="ekipniSpopadi" className="ekipniSpopadi downDog upDog">
+        <div className="storTitle"><h1>EKIPNI SPOPADI</h1></div>
+        <div className="ekipniPhoto"></div>
+        </div>
         <div id="trening" className="upDog downDog">
           <div className="storTitle"><h1>TRENINGI</h1></div>
           <div className="treningPhoto"></div>
           <div className="treningText"></div>
           <h2 className="upPad">COMING SOON...</h2>
         </div>
-
-        <div id="splosniSpopadi" className="splosniSpopadi upDog downDog">
-        <div className="storTitle"><h1>SPLOŠNI SPOPADI</h1></div>
-        <div className="splosniPhoto"></div>
-        </div>
-        <div id="ekipniSpopadi" className="ekipniSpopadi downDog upDog">
-        <div className="storTitle"><h1>EKIPNI SPOPADI</h1></div>
-        <div className="ekipniPhoto"></div>
-        </div>
-
 </div>
     
     

@@ -7,7 +7,7 @@ import img4 from './images/teambuilding.jpg';
 const Slider = () =>{
 
     return(
-    <AwesomeSlider style={{height:'40%',width:'70%', margin:'auto'}}>
+    <AwesomeSlider style={{height:'30%',width:'60%', margin:'auto'}}>
     <div><img src={img}></img></div>
     <div><img src={img2}></img></div>
     <div><img src={img3}></img></div>

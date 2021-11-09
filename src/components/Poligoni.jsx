@@ -21,7 +21,7 @@ function Poligoni() {
       
     </div>
 
-    <div className="miniDog">
+    <div className="minierDog">
       <h2> GALERIJA OUTDOOR</h2>
       
     </div>
@@ -33,7 +33,7 @@ function Poligoni() {
 
 
 
-
+    {/*
 
       <div className=" miniDog">
       <div className="storTitle">
@@ -65,8 +65,9 @@ function Poligoni() {
         <iframe className="indoorVirtual" src="https://www.google.com/maps/embed?pb=!4v1635700542998!6m8!1m7!1sCAoSLEFGMVFpcFB2dVhyQTF5SnRqbUhGbVZ6UDNRbFY4SjlkaVpZMU5HdUF1T0o1!2m2!1d46.1680444!2d14.5969712!3f301.4171865745311!4f-1.026702862783793!5f0.4000000000000002" ></iframe>
         </div>
       </div>
+      */}
     </div>
-      
+    
   );
 }
 

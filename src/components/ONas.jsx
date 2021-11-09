@@ -89,7 +89,7 @@ function ONas() {
               </div>
           </div>
           <div className="paket">
-            <div className="paketNaslov miniDog">RAZLIČNI POLIGONI</div>
+            <div className="paketNaslov miniDog">POLIGONI</div>
             <div className="slikaPaket"><img className="paketSlika" src={outdoor} /></div>
             <div className="sneakyText">
               <p>OUTDOOR POLIGON</p>
