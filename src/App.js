@@ -1,11 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Navigation, Footer, ONas, Storitve, Kontakt, Poligoni,Oprema,Pravilnik } from "./components";
+import ScrollToTop from "./components/ScrollToTop";
 function App() {
   return (
     <div className="App">
       <Router>
         <Navigation />
+      <ScrollToTop/>
         <Switch>
           <Route path="/" exact component={() => <ONas />} />
           <Route path="/storitve" exact component={() => <Storitve />} />

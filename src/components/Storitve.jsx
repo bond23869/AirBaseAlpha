@@ -75,7 +75,10 @@ function Storitve() {
         <p>Več si lahko pogledate na Discordu: </p>
         <p>Rezervirajte svoje mesto!</p>
         </div>
+
+        <div className="discord">
         <DiscordInvite palette="light" guild="846714265738280972"/>
+        </div>
         <div class="buttons">
           <div class="containerButton">
             <a href="https://twitter.com/masuwa1018" class="btn effect01" target="_blank"><span>Rezerviraj</span></a>

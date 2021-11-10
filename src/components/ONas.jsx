@@ -10,10 +10,12 @@ import sposoja from "./images/rentGear.jpg";
 import training from "./images/ar-min.jpg";
 import Quote from "./Quote";
 import Maps from "./Maps";
+import { Link, withRouter } from "react-router-dom";
+
 
 function ONas() {
 
-  
+
 
   return (
     <div className="ONas">
@@ -83,23 +85,29 @@ function ONas() {
               <p>SPOSOJA SAMO SPECIFIČNIH ARTIKLOV</p>
             </div>
             <div className="lowerBottom">
-              </div>
-              <div className="storitveButton">
-                <button className="button">SPOSOJA OPREME</button>
-              </div>
+            </div>
+            <div className="storitveButton">
+
+              <Link className="" to="/oprema">
+                SPOSODI OPREMO
+              </Link>
+            </div>
           </div>
           <div className="paket">
             <div className="paketNaslov miniDog">POLIGONI</div>
             <div className="slikaPaket"><img className="paketSlika" src={outdoor} /></div>
             <div className="sneakyText">
               <p>OUTDOOR POLIGON</p>
-              
+
               <p>INDOOR POLIGON</p>
-              
+
             </div>
-              <div className="storitveButton">
-                <button className="button">OGLED POLIGONOV</button>
-              </div>
+            <div className="storitveButton">
+
+              <Link className="" to="/poligoni">
+                OGLED POLIGONOV
+              </Link>
+            </div>
           </div>
           <div className="paket" >
             <div className="paketNaslov miniDog">SPECIAL EVENTI</div>
@@ -108,21 +116,27 @@ function ONas() {
               <p>NAJBOLJŠI EVENTI V SLOVENIJI</p>
               <p>NEPOZABNE DOGODIVŠČINE</p>
             </div>
-              <div className="storitveButton">
-                <button className="button">OGLED EVENTOV</button>
-              </div>
+            <div className="storitveButton">
+
+              <Link className="" to="/storitve">
+                OGLED EVENTOV
+              </Link>
+            </div>
           </div>
           <div className="paket rightBoy">
             <div className="paketNaslov miniDog">TRENINGI</div>
             <div className="slikaPaket"><img className="paketSlika" src={training} /></div>
             <div className="sneakyText">
               <p>COMING SOON...</p>
-             
-              
+
+
             </div>
             <div className="storitveButton">
-                <button className="button">OGLED TRENINGOV</button>
-              </div>
+
+              <Link className="" to="/storitve">
+                OGLED TRENINGOV
+              </Link>
+            </div>
           </div>
         </div>
 
@@ -130,16 +144,16 @@ function ONas() {
 
         </div>
 
-        
+
       </div>
 
       <div className="Lokacija upPad miniDog">
         <Maps />
-      <div className="lokacijaText">
-        <h1>LOKACIJA</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem dolorum nobis consequatur labore suscipit facilis et dicta, quidem ducimus iure possimus veniam explicabo quod temporibus impedit eum dolor vel perspiciatis!</p>
-      </div>
-        
+        <div className="lokacijaText">
+          <h1>LOKACIJA</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem dolorum nobis consequatur labore suscipit facilis et dicta, quidem ducimus iure possimus veniam explicabo quod temporibus impedit eum dolor vel perspiciatis!</p>
+        </div>
+
       </div>
 
       <div className="rezervacija downDog">
