@@ -10,7 +10,7 @@ function Kontakt() {
         <h1>KONTAKT</h1>
       </div>
 
-      <div className="obrazi miniDog upDog">
+      <div className="obrazi miniDog upPad">
         <div className="topObraz">
           <div className="obraz">
             <div className="obrazSlika">
