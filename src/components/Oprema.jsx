@@ -1,27 +1,27 @@
 import React from "react";
-
+import rifle from "./images/rifle.png";
+import mask from "./images/mask.png";
+import vest from "./images/vest.png";
 function Oprema() {
   return (
     <div className="contact">
-      <div className="container">
-        <div className="row align-items-center my-5">
-          <div className="col-lg-7">
-            <img
-              className="img-fluid rounded mb-4 mb-lg-0"
-              src="http://placehold.it/900x400"
-              alt=""
-            />
-          </div>
-          <div className="col-lg-5">
-            <h1 className="font-weight-light">Oprema</h1>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
-          </div>
+      <div className="storTitle minierDog">
+        <h1>Oprema</h1>
+      </div>
+      <div className="opremaOpis minierDog">
+        <div className="triOpreme">
+          <div className="oprema left mask"><p>It is me the ranger</p></div>
+          <div className="oprema vest"></div>
+          <div className="oprema right oblacila"></div>
         </div>
+        <div className="triOpreme upMinierDog">
+          <div className="oprema left rifle"></div>
+          <div className="oprema dmr"></div>
+          <div className="oprema right sniper"></div>
+        </div>
+        
+        
+        
       </div>
     </div>
   );
