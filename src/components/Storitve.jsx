@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from 'react-scroll';
 import DiscordInvite from "react-discord-invite";
+import sposoja from "./images/rentGear.jpg";
 
 function Storitve() {
   return (
@@ -30,7 +31,7 @@ function Storitve() {
 
           <div className="muskateer">
 
-            <div className="topMusk"><h3>EKIPNI SPOPADI</h3></div>
+            <div className="topMusk"><h3>SPOPADI</h3></div>
             <div className="middleMusk"><ul>
               <li>Rojstnodnevne zabave in team-buildingi</li>
 
@@ -41,18 +42,18 @@ function Storitve() {
             </div>
 
             <div className="bottomMusk">
-              <span className="flyToTrening middle"><Link to="ekipniSpopadi" spy={true} smooth={true}>EKIPNI SPOPAD</Link></span>
+              <span className="flyToTrening middle"><Link to="ekipniSpopadi" spy={true} smooth={true}>SPOPADI</Link></span>
             </div>
           </div>
 
 
           <div className="muskateer">
-            <div className="topMusk"><h3>SPLOŠNI SPOPADI</h3></div>
-            <div className="middleMusk"><p> Dobrodošli vsi, nedelja razervirana samo za max 30 oseb na spopad v poletnem času, v outdoor prostoru in max 16 oseb v zimskem času v indoor prostoru.</p>
+            <div className="topMusk"><h3>SPOSOJA OPREME</h3></div>
+            <div className="middleMusk"><p> Ponujamo veliko izbiro opreme za sposojo od zaščitne opreme do replik.</p>
 
             </div>
             <div className="bottomMusk">
-              <span className="flyToTrening "><Link to="splosniSpopadi" spy={true} smooth={true}>SPLOŠNI SPOPAD</Link></span>
+              <span className="flyToTrening "><Link to="splosniSpopadi" spy={true} smooth={true}>SPOSOJA OPREME</Link></span>
             </div>
           </div>
         </div>
@@ -66,7 +67,7 @@ function Storitve() {
 
 
       <div id="splosniSpopadi" className="splosniSpopadi upDog downDog">
-        <div className="storTitle"><h1>SPLOŠNI SPOPADI</h1></div>
+        <div className="storTitle"><h1>SPOPADI</h1></div>
         <div className="splosniPhoto minierDog"></div>
         <div className="splosniText">
           <h2>Spopadi, kjer so vabljeni vsi airsoft navdušenci!</h2>
@@ -76,7 +77,7 @@ function Storitve() {
           <p>Rezervirajte svoje mesto!</p>
         </div>
 
-        <div className="discord">
+        <div className="discord upMinierDog">
           <DiscordInvite palette="light" guild="846714265738280972" />
         </div>
         <div class="buttons">
@@ -86,10 +87,44 @@ function Storitve() {
         </div>
 
       </div>
+
       <div id="ekipniSpopadi" className="ekipniSpopadi downDog upDog">
-        <div className="storTitle"><h1>EKIPNI SPOPADI</h1></div>
+        <div className="storTitle"><h1>SPOSOJA OPREME</h1></div>
         <div className="ekipniPhoto"></div>
+        <div className="sposojaText upMinierDog">
+          <h2>SPOSODITE SI OPREMO!</h2>
+          <div className="Lokacija upMinierDog">
+            <div className="sposodnaSlika"><img src={sposoja}></img></div>
+            <div className="sposodniText">
+              <h2>Samo specifičen del opreme</h2>
+              <h3>Lahko si sposodite vse od baterije za repliko</h3>
+              <h3>do zaščitne maske</h3>
+            <div className="cenik upMinierDog">
+              <h2 style={{color:'#2c699f'}}>CENIK</h2>
+              <ul>
+                <li>Renta replike Assault: 10€</li>
+                <br />
+                <li>Renta zaščitne maske: 5€</li>
+                <br />
+                <li>Renta zaščitnih očal: 5€</li>
+                <br />
+                <li>Renta baterije 7,4V: 5€</li>
+                <br />
+                <li>Renta baterije 11,1V: 5€</li>
+                <br />
+                <li>Nakup metkov: 5€</li>
+                <li>Renta maske: 5€</li>
+                <li>Renta maske: 5€</li>
+                <li>Renta maske: 5€</li>
+                <li>Renta maske: 5€</li>
+
+              </ul>
+            </div>
+              </div>
+          </div>
+        </div>
       </div>
+
       <div id="trening" className="upDog downDog">
         <div className="storTitle"><h1>TRENINGI</h1></div>
         <div className="treningPhoto"></div>

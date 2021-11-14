@@ -155,7 +155,14 @@ html{
   vertical-align: middle;;
 }
 
-
+.cenik ul{
+  width:40%;
+  margin:auto;
+}
+.cenik li{
+text-align:left;
+font-size:120%;
+}
 
 .rightNav li{
   display:inline;
@@ -826,6 +833,7 @@ margin-top:20px;
   display:flex;
   justify-content: space-between;
   text-align:center;
+  width:100%;
   
 }
 
@@ -980,6 +988,11 @@ margin-top:20px;
 }
 
 .discord{
+  width:100%;
+  display:flex;
+}
+
+.DiscordInvite-root{
   margin-left:auto;
   margin-right:auto;
 }
@@ -1056,4 +1069,16 @@ font-size:150%;
 .sniper{
   background-image:url(./components/images/sniper.png);
   
+}
+
+.sposodnaSlika{
+  width:50%;
+
+}
+
+.sposodniText{
+  width:50%;
+  text-align: center;
+  font-size:120%;
+  color:white;
 }
