@@ -3,7 +3,52 @@ import { Link } from 'react-scroll';
 import DiscordInvite from "react-discord-invite";
 import sposoja from "./images/rentGear.jpg";
 
+
+
 function Storitve() {
+
+  const extend = (object) => {
+    var asoltPaket = document.getElementsByClassName('asoltPaket')[0];
+    var dmrPaket = document.getElementsByClassName('dmrPaket')[0];
+    var sniperPaket = document.getElementsByClassName('sniperPaket')[0];
+
+    if(object.includes('asoltPaket')){
+      console.log("asoltPaket")
+      if(asoltPaket.style.width ===  "80%"){
+        dmrPaket.style.width="30%";
+        sniperPaket.style.width="30%";
+        asoltPaket.style.width="30%";
+      }
+      else{
+        dmrPaket.style.width="0";
+        sniperPaket.style.width="0";
+        
+        asoltPaket.style.width="80%";
+      }
+      
+    }
+    else if(object.includes('dmrPaket')){
+      if(asoltPaket.style.display === "none"){
+        asoltPaket.style.display="block";
+        sniperPaket.style.display="block";
+      }
+      else{
+        asoltPaket.style.display="none";
+        sniperPaket.style.display="none";
+      }
+    }
+    else if(object.includes('sniperPaket')){
+      if(asoltPaket.style.display === "none"){
+        asoltPaket.style.display="block";
+        dmrPaket.style.display="block";
+      }
+      else{
+        asoltPaket.style.display="none";
+        dmrPaket.style.display="none";
+      }
+    }
+  }
+
   return (
     <div>
       <div className="Storitve upPad downDog">
@@ -113,19 +158,46 @@ function Storitve() {
                 <li>Renta baterije 11,1V: 5€</li>
                 <br />
                 <li>Nakup metkov: 5€</li>
-                <li>Renta maske: 5€</li>
-                <li>Renta maske: 5€</li>
-                <li>Renta maske: 5€</li>
-                <li>Renta maske: 5€</li>
+                
 
               </ul>
             </div>
               </div>
           </div>
+
+
         </div>
+        <div>
+          <div className="minierDog upPad">
+          <h2>Sposodite si paket</h2>
+          </div>
+          <div className="opremaPaketi">
+            
+            <div className="opremaPaket asoltPaket" onClick={(event) => extend(event.target.className)}>
+              <div><h1>SOLDIER</h1></div>
+              <div>
+                <p>V paketu dobite:</p>
+                <ul>
+                  <li>Assualt rifle repliko (M4, AK-47, ...)</li>
+                  <li>Zaščitno masko in očaka</li>
+                  <li>1x High-cap magazine</li>
+                  <li>Dovolj metko za dnevni spopad</li>
+                </ul>
+              </div>
+              
+            </div>
+            <div className="opremaPaket dmrPaket"  onClick={(event) => extend(event.target.className)}>
+            <div><h1>DESIGNATED MARKSMAN</h1></div>
+            </div>
+            <div className="opremaPaket sniperPaket"  onClick={(event) => extend(event.target.className)}>
+            <div><h1>SNIPER</h1></div>
+            </div>
+            
+          </div>
+          </div>
       </div>
 
-      <div id="trening" className="upDog downDog">
+      <div id="trening" className="upDog downDog" >
         <div className="storTitle"><h1>TRENINGI</h1></div>
         <div className="treningPhoto"></div>
         <div className="treningText"></div>

@@ -18,7 +18,7 @@ function Pravilnik() {
         <p>Lipo = Lithium-ion polymer battery. (Almost perfect charge/discharge efficiency ~ 99.8%)</p>
       </div>
 
-      <div className="pravila downDog upPad">
+      <div className="pravila downDog upMinierDog">
         <div className="pravilo">
           <h2 className="minierDog">Splošna pravila</h2>
           <ol>

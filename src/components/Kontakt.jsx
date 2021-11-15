@@ -34,7 +34,7 @@ function Kontakt() {
               <p>Discord: Švic Majstr#2822</p>
             </div>
           </div>
-          <div className="obraz" style={{margin:'0% 25% 0% 0%'}}>
+          <div className="obraz" style={{margin:'0% 26.5% 0% 0%'}}>
             <div className="obrazSlika">
               <img src={jan}></img>
             </div>
@@ -46,7 +46,7 @@ function Kontakt() {
           </div>
         </div>
         <div className="bottomObraz ">
-          <div className="obraz" style={{margin:'5% 0% 0% 30%'}}>
+          <div className="obraz" style={{margin:'3% 0% 0% 33%'}}>
             <div className="obrazSlika">
               <img src={jan}></img>
             </div>
@@ -56,7 +56,7 @@ function Kontakt() {
               <p>Discord: Chief51#5390</p>
             </div>
           </div>
-          <div className="obraz" style={{margin:'5% 0% 0% 15%'}}>
+          <div className="obraz" style={{margin:'3% 0% 0% 13%'}}>
             <div className="obrazSlika">
               <img src={jan}></img>
             </div>

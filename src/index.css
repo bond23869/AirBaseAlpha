@@ -878,7 +878,7 @@ margin-top:20px;
 }
 
 .obraz{
-  width:13%;
+  width:10%;
   height:10%;
   margin:auto;
   transition:1s;
@@ -1081,4 +1081,41 @@ font-size:150%;
   text-align: center;
   font-size:120%;
   color:white;
+}
+
+.opremaPaketi{
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  height:auto;
+}
+
+.opremaPaket{
+  width:30%;
+  height:700px;
+  border:1px solid white;
+  margin:auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor:pointer;
+  -webkit-transition:1s;
+}
+.opremaPaket h1{
+  font-size:250%;
+}
+.asoltPaket{
+  
+  background-image: url(./components/images/poza1_low_opac_2.png);
+  
+}
+
+.dmrPaket{
+  background-image: url(./components/images/poza3_low_opac_2.png);
+}
+
+.sniperPaket{
+  
+  background-position-y: bottom;
+  background-image: url(./components/images/poza2_low_opac_2.png);
 }
