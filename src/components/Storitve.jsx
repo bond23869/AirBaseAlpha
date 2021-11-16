@@ -4,7 +4,7 @@ import DiscordInvite from "react-discord-invite";
 import sposoja from "./images/rentGear.jpg";
 import sniper from "./images/sniper.png";
 import bullets from "./images/bullets.jpg";
-
+import click from "./images/whiteClick.png";
 
 function Storitve() {
 
@@ -201,29 +201,50 @@ function Storitve() {
           <div className="opremaPaketi">
 
             <div className="opremaPaket asoltPaket" onClick={(event) => extend(event.target.className)}>
-              <div><h1>SOLDIER</h1></div>
-              <div>
-                <p>V paketu dobite:</p>
-                <ul>
-                  <li>Assualt rifle repliko (M4, AK-47, ...)</li>
-                  <li>Zaščitno masko in očaka</li>
-                  <li>1x High-cap magazine</li>
-                  <li>Dovolj metko za dnevni spopad</li>
-                </ul>
+              <div className="opremaTop"><h1>SOLDIER</h1></div>
+              <div className="opremaMiddle">
+                <p>V PAKETU DOBITE:</p>
+                
+                  <p>Assualt rifle repliko (M4, AK-47, ...)</p>
+                  <p>Zaščitno masko in očaka</p>
+                <p>1x High-cap magazine</p>
+                  <p>BB metke 0.28g</p>
+                
               </div>
-              <div className="opremaPaketSlike">
               
-                <div className="opremaPaketSlika"><img src={sniper}></img></div>
-                <div className="opremaPaketSlika"><img src={bullets}></img></div>
-              
+              <div className="clickable">
+                <img src={click}/>
               </div>
-
             </div>
+
+
             <div className="opremaPaket dmrPaket" onClick={(event) => extend(event.target.className)}>
-              <div><h1>DESIGNATED MARKSMAN</h1></div>
+              <div className="opremaTop"><h1>DESIGNATED MARKSMAN</h1></div>
+              <div className="opremaMiddle">
+              <p>V PAKETU DOBITE:</p>
+                
+                <p>Designated marksman rifle</p>
+                <p>Zaščitno masko in očaka</p>
+                <p>2x Mid-cap magazine</p>
+                <p>BB metke 0.35g</p>
+              </div>
+              <div className="clickable">
+                <img src={click}/>
+              </div>
             </div>
             <div className="opremaPaket sniperPaket" onClick={(event) => extend(event.target.className)}>
-              <div><h1>SNIPER</h1></div>
+              <div className="opremaTop"><h1>SNIPER</h1></div>
+              <div className="opremaMiddle">
+              <p>V PAKETU DOBITE:</p>
+                
+                <p>Sniper repliko</p>
+                <p>Zaščitno masko in očaka</p>
+                <p>2x Mid-cap magazine</p>
+                <p>BB metke 0.40g</p>
+              </div>
+              <div className="clickable">
+                <img src={click}/>
+              </div>
             </div>
 
           </div>
