@@ -2,53 +2,80 @@ import React from "react";
 import { Link } from 'react-scroll';
 import DiscordInvite from "react-discord-invite";
 import sposoja from "./images/rentGear.jpg";
-
+import sniper from "./images/sniper.png";
+import bullets from "./images/bullets.jpg";
 
 
 function Storitve() {
 
+ 
+  
+  
+
   const extend = (object) => {
+    
+    
+   
     var asoltPaket = document.getElementsByClassName('asoltPaket')[0];
     var dmrPaket = document.getElementsByClassName('dmrPaket')[0];
     var sniperPaket = document.getElementsByClassName('sniperPaket')[0];
 
-    if(object.includes('asoltPaket')){
-      console.log("asoltPaket")
-      if(asoltPaket.style.width ===  "80%"){
-        dmrPaket.style.width="30%";
-        sniperPaket.style.width="30%";
-        asoltPaket.style.width="30%";
-      }
-      else{
-        dmrPaket.style.width="0";
-        sniperPaket.style.width="0";
-        
-        asoltPaket.style.width="80%";
-      }
+    var asoltPaketSlike = document.getElementsByClassName('opremaPaketSlika');
+
+
+    if (object.includes('asoltPaket')) {
+
       
+
+      console.log("asoltPaket")
+      if (asoltPaket.style.width === "80%") {
+        dmrPaket.style.display = "block";
+        sniperPaket.style.display = "block";
+        asoltPaket.style.width = "30%";
+        Array.prototype.forEach.call(asoltPaketSlike,function(el){
+
+          el.style.display="none";
+  
+        });
+      }
+      else {
+        dmrPaket.style.display = "none";
+        sniperPaket.style.display = "none";
+        asoltPaket.style.width = "80%";
+        Array.prototype.forEach.call(asoltPaketSlike,function(el){
+
+          el.style.display="inline-block";
+  
+        });
+      }
+
     }
-    else if(object.includes('dmrPaket')){
-      if(asoltPaket.style.display === "none"){
-        asoltPaket.style.display="block";
-        sniperPaket.style.display="block";
+    else if (object.includes('dmrPaket')) {
+      if (asoltPaket.style.display === "none") {
+        asoltPaket.style.display = "block";
+        sniperPaket.style.display = "block";
+        dmrPaket.style.width = "30%";
       }
-      else{
-        asoltPaket.style.display="none";
-        sniperPaket.style.display="none";
+      else {
+        asoltPaket.style.display = "none";
+        sniperPaket.style.display = "none";
+        dmrPaket.style.width = "80%";
       }
     }
-    else if(object.includes('sniperPaket')){
-      if(asoltPaket.style.display === "none"){
-        asoltPaket.style.display="block";
-        dmrPaket.style.display="block";
+    else if (object.includes('sniperPaket')) {
+      if (asoltPaket.style.display === "none") {
+        asoltPaket.style.display = "block";
+        dmrPaket.style.display = "block";
+        sniperPaket.style.width = "30%"
       }
-      else{
-        asoltPaket.style.display="none";
-        dmrPaket.style.display="none";
+      else {
+        asoltPaket.style.display = "none";
+        dmrPaket.style.display = "none";
+        sniperPaket.style.width = "80%";
       }
     }
   }
-
+  
   return (
     <div>
       <div className="Storitve upPad downDog">
@@ -144,35 +171,35 @@ function Storitve() {
               <h2>Samo specifičen del opreme</h2>
               <h3>Lahko si sposodite vse od baterije za repliko</h3>
               <h3>do zaščitne maske</h3>
-            <div className="cenik upMinierDog">
-              <h2 style={{color:'#2c699f'}}>CENIK</h2>
-              <ul>
-                <li>Renta replike Assault: 10€</li>
-                <br />
-                <li>Renta zaščitne maske: 5€</li>
-                <br />
-                <li>Renta zaščitnih očal: 5€</li>
-                <br />
-                <li>Renta baterije 7,4V: 5€</li>
-                <br />
-                <li>Renta baterije 11,1V: 5€</li>
-                <br />
-                <li>Nakup metkov: 5€</li>
-                
+              <div className="cenik upMinierDog">
+                <h2 style={{ color: '#2c699f' }}>CENIK</h2>
+                <ul>
+                  <li>Renta replike Assault: 10€</li>
+                  <br />
+                  <li>Renta zaščitne maske: 5€</li>
+                  <br />
+                  <li>Renta zaščitnih očal: 5€</li>
+                  <br />
+                  <li>Renta baterije 7,4V: 5€</li>
+                  <br />
+                  <li>Renta baterije 11,1V: 5€</li>
+                  <br />
+                  <li>Nakup metkov: 5€</li>
 
-              </ul>
-            </div>
+
+                </ul>
               </div>
+            </div>
           </div>
 
 
         </div>
         <div>
           <div className="minierDog upPad">
-          <h2>Sposodite si paket</h2>
+            <h2>Sposodite si paket</h2>
           </div>
           <div className="opremaPaketi">
-            
+
             <div className="opremaPaket asoltPaket" onClick={(event) => extend(event.target.className)}>
               <div><h1>SOLDIER</h1></div>
               <div>
@@ -184,17 +211,23 @@ function Storitve() {
                   <li>Dovolj metko za dnevni spopad</li>
                 </ul>
               </div>
+              <div className="opremaPaketSlike">
               
+                <div className="opremaPaketSlika"><img src={sniper}></img></div>
+                <div className="opremaPaketSlika"><img src={bullets}></img></div>
+              
+              </div>
+
             </div>
-            <div className="opremaPaket dmrPaket"  onClick={(event) => extend(event.target.className)}>
-            <div><h1>DESIGNATED MARKSMAN</h1></div>
+            <div className="opremaPaket dmrPaket" onClick={(event) => extend(event.target.className)}>
+              <div><h1>DESIGNATED MARKSMAN</h1></div>
             </div>
-            <div className="opremaPaket sniperPaket"  onClick={(event) => extend(event.target.className)}>
-            <div><h1>SNIPER</h1></div>
+            <div className="opremaPaket sniperPaket" onClick={(event) => extend(event.target.className)}>
+              <div><h1>SNIPER</h1></div>
             </div>
-            
+
           </div>
-          </div>
+        </div>
       </div>
 
       <div id="trening" className="upDog downDog" >

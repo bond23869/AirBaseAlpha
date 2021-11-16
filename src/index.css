@@ -1091,6 +1091,7 @@ font-size:150%;
 }
 
 .opremaPaket{
+  z-index: 10;
   width:30%;
   height:700px;
   border:1px solid white;
@@ -1099,10 +1100,16 @@ font-size:150%;
   background-repeat: no-repeat;
   background-position: center;
   cursor:pointer;
-  -webkit-transition:1s;
+  transition:1s;
+  position: inherit;
+  display:block;
 }
 .opremaPaket h1{
   font-size:250%;
+z-index: 1;
+
+
+  
 }
 .asoltPaket{
   
@@ -1118,4 +1125,24 @@ font-size:150%;
   
   background-position-y: bottom;
   background-image: url(./components/images/poza2_low_opac_2.png);
+}
+
+.opremaPaketSlike{
+  display:flex;
+  width:100%;
+}
+
+.opremaPaketSlika{
+  display:none;
+  transition:1s;
+  margin-left:auto;
+margin-right:auto;
+width:30%;
+height:200px;
+}
+
+.opremaPaketSlike img{
+
+height:90%;
+
 }
