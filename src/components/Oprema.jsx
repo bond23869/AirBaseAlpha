@@ -10,14 +10,14 @@ function Oprema() {
       </div>
       <div className="opremaOpis minierDog">
         <div className="triOpreme">
-          <div className="oprema left mask"><p>It is me the ranger</p></div>
-          <div className="oprema vest"></div>
-          <div className="oprema right oblacila"></div>
+          <div className="oprema left mask"><p>ZAŠČITNA MASKA</p></div>
+          <div className="oprema vest"><p>TACTICAL RIG</p></div>
+          <div className="oprema right oblacila"><p>KAMUFLAŽNA OBLAČILA</p></div>
         </div>
         <div className="triOpreme upMinierDog">
-          <div className="oprema left rifle"></div>
-          <div className="oprema dmr"></div>
-          <div className="oprema right sniper"></div>
+          <div className="oprema left rifle"><p>ASSUALT RIFLE REPLIKA</p></div>
+          <div className="oprema dmr"><p>DESIGNATED MARKSMAN RIFLE REPLIKA</p></div>
+          <div className="oprema right sniper"><p>SNIPER RIFLE REPLIKA</p></div>
         </div>
         
         

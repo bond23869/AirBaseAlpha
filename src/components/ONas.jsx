@@ -160,7 +160,7 @@ function ONas() {
         <h2>Rezervirajte svoj termin</h2>
         <div class="buttons">
           <div class="containerButton">
-            <a href="https://twitter.com/masuwa1018" class="btn effect01" target="_blank"><span>Rezerviraj</span></a>
+            <a href="https://www.picktime.com/AirsoftBaseAlpha" class="btn effect01" target="_blank"><span>Rezerviraj</span></a>
           </div>
         </div>
 

@@ -1,6 +1,8 @@
 import React from "react";
 import Maps from "./Maps";
 import jan from "./images/jan.jpg";
+import blaz from "./images/blaz.jpg";
+import miha from "./images/miha.jpg";
 
 function Kontakt() {
   return (
@@ -36,7 +38,7 @@ function Kontakt() {
           </div>
           <div className="obraz" style={{margin:'0% 26.5% 0% 0%'}}>
             <div className="obrazSlika">
-              <img src={jan}></img>
+              <img src={miha}></img>
             </div>
             <div className="obrazText">
               <p className="obrazIme">Miha Podobnik</p>
@@ -48,7 +50,7 @@ function Kontakt() {
         <div className="bottomObraz ">
           <div className="obraz" style={{margin:'3% 0% 0% 33%'}}>
             <div className="obrazSlika">
-              <img src={jan}></img>
+              <img src={blaz}></img>
             </div>
             <div className="obrazText">
               <p className="obrazIme">Blaž</p>

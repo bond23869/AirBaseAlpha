@@ -19,20 +19,22 @@ function Storitve() {
     var asoltPaket = document.getElementsByClassName('asoltPaket')[0];
     var dmrPaket = document.getElementsByClassName('dmrPaket')[0];
     var sniperPaket = document.getElementsByClassName('sniperPaket')[0];
+    
 
-    var asoltPaketSlike = document.getElementsByClassName('opremaPaketSlika');
-
+    var middleOprema = document.getElementsByClassName('opremaMiddle');
+    var middleText = document.getElementsByClassName('middleText');
+    var opremaSlike = document.getElementsByClassName('delPaketaSlika');
 
     if (object.includes('asoltPaket')) {
 
       
-
-      console.log("asoltPaket")
       if (asoltPaket.style.width === "80%") {
         dmrPaket.style.display = "block";
         sniperPaket.style.display = "block";
         asoltPaket.style.width = "30%";
-        Array.prototype.forEach.call(asoltPaketSlike,function(el){
+        
+        middleText[0].style.display="block";
+        Array.prototype.forEach.call(opremaSlike,function(el){
 
           el.style.display="none";
   
@@ -42,12 +44,18 @@ function Storitve() {
         dmrPaket.style.display = "none";
         sniperPaket.style.display = "none";
         asoltPaket.style.width = "80%";
-        Array.prototype.forEach.call(asoltPaketSlike,function(el){
+        middleOprema[0].style.width="90%";
+        middleText[0].style.display="flex";
+        middleText[0].style.justifyContent="space-between";
+        Array.prototype.forEach.call(opremaSlike,function(el){
 
           el.style.display="inline-block";
   
         });
       }
+
+
+
 
     }
     else if (object.includes('dmrPaket')) {
@@ -55,23 +63,33 @@ function Storitve() {
         asoltPaket.style.display = "block";
         sniperPaket.style.display = "block";
         dmrPaket.style.width = "30%";
+        
+        middleText[1].style.display="block";
       }
       else {
         asoltPaket.style.display = "none";
         sniperPaket.style.display = "none";
         dmrPaket.style.width = "80%";
+        middleOprema[1].style.width="90%";
+        middleText[1].style.display="flex";
+        middleText[1].style.justifyContent="space-between";
       }
     }
+
     else if (object.includes('sniperPaket')) {
       if (asoltPaket.style.display === "none") {
         asoltPaket.style.display = "block";
         dmrPaket.style.display = "block";
         sniperPaket.style.width = "30%"
+        middleText[2].style.display="block";
       }
       else {
         asoltPaket.style.display = "none";
         dmrPaket.style.display = "none";
+        middleOprema[2].style.width="90%";
         sniperPaket.style.width = "80%";
+        middleText[2].style.display="flex";
+        middleText[2].style.justifyContent="space-between";
       }
     }
   }
@@ -203,13 +221,29 @@ function Storitve() {
             <div className="opremaPaket asoltPaket" onClick={(event) => extend(event.target.className)}>
               <div className="opremaTop"><h1>SOLDIER</h1></div>
               <div className="opremaMiddle">
+                <div className="middleLeftPicture"><img src={sniper}/></div>
                 <p>V PAKETU DOBITE:</p>
+                <div className="middleText">
                 
-                  <p>Assualt rifle repliko (M4, AK-47, ...)</p>
-                  <p>Zaščitno masko in očaka</p>
-                <p>1x High-cap magazine</p>
-                  <p>BB metke 0.28g</p>
-                
+                  <div className="delPaketa">
+                    <p>Assualt rifle repliko (M4, AK-47, ...)</p>
+                    <img className="delPaketaSlika" src={sniper}/>
+                  </div>
+
+                  <div className="delPaketa">
+                    <p>Zaščitno masko in očaka</p>
+                    <img className="delPaketaSlika" src={sniper}/>
+                  </div>
+                  <div className="delPaketa">
+                    <p>1x High-cap magazine</p>
+                    <img className="delPaketaSlika" src={sniper}/>
+                  </div>
+                  <div className="delPaketa">
+                    <p>BB metke 0.28g</p>
+                    <img className="delPaketaSlika" src={sniper}/>
+                  </div>
+                  </div>
+                  <div className="middleRightPicture"><img src={bullets}/></div>
               </div>
               
               <div className="clickable">
@@ -220,27 +254,36 @@ function Storitve() {
 
             <div className="opremaPaket dmrPaket" onClick={(event) => extend(event.target.className)}>
               <div className="opremaTop"><h1>DESIGNATED MARKSMAN</h1></div>
+              
               <div className="opremaMiddle">
-              <p>V PAKETU DOBITE:</p>
+                <div className="middleLeftPicture"><img src={sniper}/></div>
+                <p>V PAKETU DOBITE:</p>
+                <div className="middleText">
                 
                 <p>Designated marksman rifle</p>
                 <p>Zaščitno masko in očaka</p>
                 <p>2x Mid-cap magazine</p>
                 <p>BB metke 0.35g</p>
+                </div>
+                <div className="middleRightPicture"><img src={bullets}/></div>
               </div>
               <div className="clickable">
                 <img src={click}/>
               </div>
             </div>
+
+
+
             <div className="opremaPaket sniperPaket" onClick={(event) => extend(event.target.className)}>
               <div className="opremaTop"><h1>SNIPER</h1></div>
               <div className="opremaMiddle">
               <p>V PAKETU DOBITE:</p>
-                
+                <div className="middleText">
                 <p>Sniper repliko</p>
                 <p>Zaščitno masko in očaka</p>
                 <p>2x Mid-cap magazine</p>
                 <p>BB metke 0.40g</p>
+                </div>
               </div>
               <div className="clickable">
                 <img src={click}/>
