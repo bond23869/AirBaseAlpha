@@ -1,6 +1,6 @@
 import React from "react";
 import indoorSlika from "./images/testIndoorPhoto.jpg";
-import pravljicna from "./images/pravljicna.jpg";
+import pravljicna from "./images/pravljicna3.JPG";
 import Slider from "./Slider.jsx";
 
 function Poligoni() {
@@ -8,12 +8,14 @@ function Poligoni() {
     <div className="contact">
       
       <div className="storTitle minierDog upMinierDog">
-          <h1>OUTDOOR POLIGON</h1>
+          <h1>OUTDOOR POLIGON PRAVLJIČNA DEŽELA</h1>
       </div>
       
     <div className="indoorPoligon miniDog">
       <div className="indoorPoligonText">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p className="upDog">Naš prvi outdoor poligon je pravljična dežela v Škofji Loki. </p>
+        <p>Vsebuje objekte, ki imajo tudi zgornje nadstropje.</p>
+        <p> Poligon je primeren za vse tipe replik od assualta do sniperja</p>
       </div>
       <div className="indoorPoligonSlika">
         <img className="indoorSlika" src={pravljicna}/>

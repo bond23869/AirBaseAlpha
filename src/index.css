@@ -278,27 +278,29 @@ h1{
   
   display:flex;
   justify-content: space-between;
-  width:100%;
+  width:90%;
+  margin-right:auto;
+  margin-left:auto;
 }
 
 .fourHorseman p{
   font-size:32px;
   color:white;
-  width:60%;
+  width:80%;
   text-align: center;
   margin-left:auto;
   margin-right:auto;
 }
 
 .boxy embed{
-  margin-left:27%;
-  margin-right:auto;
-  
+  margin:auto;
 }
 
 .boxy{
   margin-left:auto;
   margin-right:auto;
+  width:20%;
+  display: block;
 }
 
 
@@ -735,7 +737,7 @@ margin-top:20px;
 }
 
 .ekipniPhoto{
-  background-image:url(./components/images/teambuilding.jpg);
+  background-image:url(./components/images/soldd.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size:cover;
@@ -753,7 +755,7 @@ margin-top:20px;
 }
 
 .indoorPoligon{
-  display:inline-block;
+  display:flex;
 }
 
 .indoorPoligonText{
@@ -761,6 +763,8 @@ margin-top:20px;
    width:40%;
    height:500px;
   }
+  
+ 
 
 .indoorPoligonSlika{
   display: inline-block;
@@ -777,7 +781,7 @@ margin-top:20px;
 .indoorPoligonText p{
   width:80%;
   text-align: justify;
-  font-size:18px;
+  font-size:140%;
   color:white;
   margin-left:auto;
   margin-right:auto;
@@ -855,7 +859,14 @@ margin-top:20px;
   height:40%;
   font-size:14px;
   display:block;
+  
 }
+
+.middleMusk li{
+  text-align: left;
+}
+
+
 
 .bottomMusk{
   height: 40%;

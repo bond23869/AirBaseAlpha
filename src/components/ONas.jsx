@@ -8,7 +8,6 @@ import outdoor from "./images/outdoor.jpg";
 import epicEvent from "./images/soldd.jpg";
 import sposoja from "./images/rentGear.jpg";
 import training from "./images/ar-min.jpg";
-import Quote from "./Quote";
 import Maps from "./Maps";
 import { Link, withRouter } from "react-router-dom";
 
