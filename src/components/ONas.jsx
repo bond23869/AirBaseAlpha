@@ -10,6 +10,7 @@ import sposoja from "./images/rentGear.jpg";
 import training from "./images/ar-min.jpg";
 import Maps from "./Maps";
 import { Link, withRouter } from "react-router-dom";
+import MediaQuery from "react-responsive";
 
 
 function ONas() {
@@ -17,6 +18,8 @@ function ONas() {
 
 
   return (
+
+    
     <div className="ONas">
       <div className="home downDog">
         <video autostart="true" autoPlay loop src={video} type="video/mp4" width="100%" height="15%" muted />
@@ -76,7 +79,7 @@ function ONas() {
 
         <div className="Storitve upPad downDog">
           <div className="paket leftBoy" >
-            <div className="paketNaslov miniDog">SPOSOJA OPREME</div>
+            <div className="paketNaslov miniDog"><p>SPOSOJA OPREME</p></div>
             <div className="slikaPaket"><img className="paketSlika" src={sposoja} /></div>
             <div className="sneakyText">
               <p>SPOSOJA KOMPLETA</p>
@@ -165,6 +168,7 @@ function ONas() {
 
       </div>
     </div>
+    
   );
 }
 

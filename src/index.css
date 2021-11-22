@@ -13,14 +13,18 @@
   }
 }
 
-
+html{
+  overflow-x: hidden;
+}
 
 body {
+  position: relative;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  overflow-y:hidden;
   background-color:black;
 }
 
@@ -415,14 +419,14 @@ opacity:1;
 }
 
 
-.paketNaslov{
+.paketNaslov {
 width: 100%;
 height:10%;
 padding-top:5%;
 padding-bottom:3%;
 margin-left:auto;
 margin-right:auto;
-vertical-align:top;
+vertical-align:middle;
 text-align: center;
 font-size: 100%;
 font-family:blackOps;
@@ -448,21 +452,22 @@ border-radius: 25px;;
 }
 
 .storitveButton{
-  height:15%;
+  height:auto;
   margin-top:auto;
   margin-bottom:auto;
   font-size:auto;
+  width:auto;
   
 }
 
 .storitveButton a{
-  font-size:90%;
+  font-size:1.3vw;
   transition:0.3s;
   height:60%;
   border-radius:10px;
   text-decoration:none;
   color:white;
-  padding:16px;
+  padding:0.8vw;
   border: 1px solid white;
   
 }
@@ -1223,3 +1228,1231 @@ height:90%;
   display:none;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:450px){
+  #secondTitle{
+    font-size:64px;
+    margin-bottom:4%;
+  }
+  
+  .blackBar{
+    
+    height:60px;
+    width:100%;
+    display:flex;
+    color:gray;
+    justify-content: space-between;
+    font-size:18px;
+  }
+  
+  
+  
+  .blackBar embed,img{
+    height:25px;
+    width:25;
+    vertical-align: middle;
+    
+    
+  }
+  
+  
+  .blackKontakt{
+    width:80%;
+    display:flex;
+    justify-content: space-between;
+    
+    
+    
+  }
+  .blackMenu{
+    width:20%;
+  }
+  .blackMenu img{
+    height:65%;
+    width:65%;
+  }
+  
+  .bKontakt{
+    display:inline-block;
+    width:33%;
+    height:100%;
+    margin-top:1.5%;
+    vertical-align: middle;
+  }
+  
+  
+  .bKontakt embed,img{
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:10%;
+    
+   
+  }
+  
+  .bKontakt img{
+    height:55%;
+    width:55%;
+    margin-top:5%;
+  }
+  
+  
+  #logo{
+    height:100px;
+    width:100px;
+    
+    margin: 1% 2% 0.5% 5%;
+    cursor:pointer;
+  }
+  
+  html{
+    
+  }
+  
+  .navList{
+    margin-top:1%;
+    margin-bottom:auto;
+  }
+  
+  .navList a{
+    font-size:20px;
+    color:white;
+    text-decoration: none;
+    font-family:blackOps;
+    vertical-align: middle;
+  }
+  
+  .navList a:hover{
+    color:#2c699f;
+  }
+  
+  .navigationBar{
+    width:100%;
+    height:auto;
+    background-color: #161616;
+    text-decoration: none;
+    display:flex;
+    justify-content: space-between;
+  }
+  
+  .rightNav{
+    margin-top:auto;
+    margin-bottom:auto;
+    display:inline-block;
+    height:50px;
+    width:auto;
+    margin-right:5%;
+    margin-left:auto;
+    text-align: right;
+    vertical-align: middle;;
+  }
+  
+  .cenik ul{
+    width:40%;
+    margin:auto;
+  }
+  .cenik li{
+  text-align:left;
+  font-size:120%;
+  }
+  
+  .rightNav li{
+    display:inline;
+    margin-left:20px;
+    
+  }
+  
+  .navBrand{
+    font-size:28px;
+    color:#FFF;
+    font-family:blackOps;
+    text-decoration: none;
+    vertical-align: middle;
+    margin:auto;
+    text-align:center;
+
+  }
+  
+  .navBrand:hover{
+    text-decoration: none;
+    color:white; 
+  }
+  
+  
+  .home{
+    background: black;
+  }
+  
+  .page-wrap {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -142px; 
+  }
+  .page-wrap:after {
+    content: "";
+    display: block;
+  }
+  .footer, .page-wrap:after {
+    height: 100px; 
+  }
+  
+  .footer{
+    background-color:black;
+  }
+  
+  .smoMi{
+  text-align: center;
+  background-color:black;
+  color:white;
+  margin-top:5%;
+  margin-bottom:8%;
+  }
+  
+  .blockOfOpis{
+    
+    display: inline-block;
+    margin-left:13%;
+    width:30%;
+    height:auto; 
+    padding: 1em;
+    vertical-align: top;
+    text-align:center;
+      
+  }
+  
+  .blockOfOpis p{
+  width:auto;
+  height:10%;
+  font-size:20px;
+  color:white;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #blueTitle{
+    color:#2c699f;
+  }
+  
+  h2{
+    font-size:40px;
+    color:white;
+    text-align:center;
+    font-family:BlackOps;
+  }
+  h1{
+    font-size:48px;
+    color:white;
+    text-align:center;
+    font-family:BlackOps;
+  }
+  
+  .downDog{
+    margin-bottom:18%;
+  }
+  .downPad{
+    padding-bottom:18%;
+  }
+  .miniDog{
+    margin-bottom:10%;
+  }
+  .upDog{
+    margin-top:18%;
+  }
+  .upPad{
+    padding-top:10%;
+  }
+  .upMinierDog{
+    margin-top:5%;
+  }
+  .minierDog{
+    margin-bottom:5%;
+  }
+  
+  .fourHorseman{
+    
+    display:flex;
+    justify-content: space-between;
+    width:90%;
+    margin-right:auto;
+    margin-left:auto;
+  }
+  
+  .fourHorseman p{
+    font-size:32px;
+    color:white;
+    width:80%;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  .boxy embed{
+    margin:auto;
+  }
+  
+  .boxy{
+    margin-left:auto;
+    margin-right:auto;
+    width:20%;
+    display: block;
+  }
+  
+  
+  .soldier{
+    background-image: url("./components/images/airsoft-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    height: 1000px;
+    width:100%;
+  }
+  
+  .container div{
+    display:inline-block;
+  }
+  
+  
+  
+  .container img{
+    width: 10%;
+    height:10%
+  }
+  h6{
+    color:white;
+  }
+  .container p{
+    color:white;
+  }
+  
+  
+  
+  
+  
+  
+  .del2{
+   
+  background-image: url(./components/images/poza3_low_opac.png), url(./components/images/poza2_low_opac.png);
+  background-repeat:no-repeat, no-repeat;
+  background-position: 105% 40%,-30%,35%;
+  background-size:contain;
+  opacity:1;
+  
+  }
+  
+  
+  .sectionAdress{
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:5%;
+    
+  }
+  
+  .quotes{
+    padding-top:5%;
+    padding-bottom:5%;
+    border: 4px solid #2c699f;
+    border-radius: 25px;
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    box-shadow:8px 10px white;
+  }
+  
+  
+  .Storitve{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    height:800px;
+    
+    
+  }
+  
+  .paket{
+    
+    width:18%;
+    height:650px;
+    padding:10px;
+    border-radius: 25px;
+    border: 3px solid white;
+    background-color:black;
+    visibility:visible;
+    animation: fadeIn 3s;
+    color:white;
+    font-size:24px;
+    margin-bottom:3%;	
+    text-align: center;
+    
+    transition:1s;
+  }
+  
+  .leftBoy{
+    margin-left:10%;
+  }
+  .rightBoy{
+    margin-right:10%;
+  }
+  
+  .paket:hover{
+    transform:scale(1.05)
+  }
+  
+  .sneakyText{
+    color:white;
+    
+    padding-top:10%;
+    font-size:90%;
+    height:40%;
+  }
+  
+  
+  .paketNaslov {
+  width: 100%;
+  height:10%;
+  padding-top:5%;
+  padding-bottom:3%;
+  margin-left:auto;
+  margin-right:auto;
+  vertical-align:middle;
+  text-align: center;
+  font-size: 100%;
+  font-family:blackOps;
+  color:black;
+  background-color: white;
+  border-radius: 25px;;
+  }
+  
+  
+  .paketNaslov p{
+    vertical-align: middle;
+  }
+  .slikaPaket{
+    width:100%;
+    height:30%;
+  }
+  .paketSlika{
+    width:100%;
+    height:100%;
+    border-radius: 25px;
+  
+    
+  }
+  
+  .storitveButton{
+    height:auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    font-size:auto;
+    width:auto;
+    
+  }
+  
+  .storitveButton a{
+    font-size:1.3vw;
+    transition:0.3s;
+    height:60%;
+    border-radius:10px;
+    text-decoration:none;
+    color:white;
+    padding:0.8vw;
+    border: 1px solid white;
+    
+  }
+  
+  
+  
+  .storitveButton a:hover{
+    color:#2c699f;
+    
+  }
+  
+  
+  
+  
+  
+  /* BUTTON CSS */
+  
+  .buttons {
+    display: flex;
+    flex-direction: row;
+        flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    
+  /*   padding: 2em 0em; */
+  }
+  
+  .containerButton {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding:  40px 0px;
+    width: 240px;
+    
+    
+  }
+  
+  .btn {
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 45px;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    
+    
+  }
+  .btn:hover {
+    text-decoration: none;
+  }
+  
+  /*btn_background*/
+  .effect01 {
+    color: #FFF;
+    border: 4px solid #000;
+    box-shadow:0px 0px 0px 4px #FFF inset;
+    background-color: #000;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  .effect01:hover {
+    border: 4px solid #666;
+    background-color: #FFF;
+    box-shadow:0px 0px 0px 4px #EEE inset;
+  }
+  
+  /*btn_text*/
+  .effect01 span {
+    transition: all 0.2s ease-out;
+    z-index: 2;
+  }
+  .effect01:hover span{
+    letter-spacing: 0.13em;
+    color: #333;
+  }
+  
+  /*highlight*/
+  .effect01:after {
+    background: #FFF;
+    border: 0px solid #000;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .8;
+    position: absolute;
+    top: -50px;
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
+    width: 50px;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);/*easeOutCirc*/
+    z-index: 1;
+  }
+  .effect01:hover:after {
+    background: #FFF;
+    border: 20px solid #000;
+    opacity: 0;
+    left: 120%;
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
+  
+  
+  
+  
+  .storitveButton{
+    margin-top:10%;
+  }
+  
+  .button{
+    
+    color:black;
+    font-family: blackOps;
+  }
+  
+  .backgroundSoldier{
+    
+    background-image: url('./components/images/poza3_low_opac.png');
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: left
+    
+    
+  }
+  
+  .middlePicture{
+    background-image: url("./components/images/ar-min.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
+    width:100%;
+  }
+  
+  .thirdPicture{
+    height:600px;
+    width:100%;
+    background-image: url("./components/images/qqq-min.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  .spicyFooter div{
+    vertical-align: top;
+    width:30%;
+  }
+  
+  .footerLokacija{
+    text-align:middle;
+  }
+  
+  
+  .storitveHeader{
+    width:60%;
+    margin-top:5%;
+  }
+  
+  .storitveHeader p{
+    font-size:16px;
+    color:white;
+    text-align: center;
+    margin-left:5%;
+    margin-right:5%;
+  }
+  
+  .threeMuskateers{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    
+  }
+  
+  .muskateer{
+    display:block;
+    width:90%;
+    height:600px;
+    border: 3px solid white;
+    border-radius:25px;
+    margin-top:5%;
+    margin-right:5%;
+  
+  }
+  
+  .muskateer h3{
+    font-family: blackOps;
+    color: #2c699f;
+    text-align:center;
+    padding:20px;
+  
+  }
+  
+  .muskateer p{
+    color:white;
+    font-size:24px;
+    width:90%;
+    text-align:justify;
+    margin-left:auto;
+    margin-right:auto;
+    
+  }
+  
+  .muskateer span{
+    
+    color:white;
+    font-size:26px;
+    transition:0.3s ease;
+    text-align:center;
+  
+    
+  }
+  
+  .muskateer span:hover{
+    color:gray;
+    
+  }
+  
+  .muskateer li{
+    color:white;
+    font-size:22px;
+  }
+  
+  
+  
+  .flyToTrening a{
+    
+    border: 3px solid #2c699f;
+    padding: 10px;
+    border-radius: 25px;
+  
+    
+  }
+  .flyToTrening{
+    cursor: pointer;
+    
+   
+  }
+  
+  
+  
+  
+  .storTitle{
+  width:100%;
+  background-color:#161616;
+  height:100px;
+  display:inline-block;
+  vertical-align: center;
+  }
+  
+  .storTitle h1{
+  margin-top:20px;
+  }
+  
+  .treningPhoto{
+    background-image:url(./components/images/soldd.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    height: 600px;
+    width: 100%;
+  }
+  
+  .ekipniPhoto{
+    background-image:url(./components/images/soldd.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    height: 600px;
+    width: 100%;
+  }
+  
+  .splosniPhoto{
+    background-image:url(./components/images/navadnispopadi.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    height: 600px;
+    width: 100%;
+  }
+  
+  .indoorPoligon{
+    display:flex;
+  }
+  
+  .indoorPoligonText{
+    display: inline-block;
+     width:40%;
+     height:500px;
+    }
+    
+   
+  
+  .indoorPoligonSlika{
+    display: inline-block;
+    width:60%;
+    height:500px;
+  }
+  
+  .indoorSlika{
+    width:80%;
+    height:120%;
+     
+  }
+  
+  .indoorPoligonText p{
+    width:80%;
+    text-align: justify;
+    font-size:140%;
+    color:white;
+    margin-left:auto;
+    margin-right:auto;
+    
+  }
+  
+  .googleMapsVirtualka{
+    width:100%;
+    height:600px;
+    display:flex;
+    justify-content: space-between;
+  }
+  .virtualniSprehod{
+    width:50%;
+    height:100%;
+    
+    
+  }
+  .virtualniSprehod p{
+    text-align: center;
+    font-size:22px;
+    color:white;
+  
+  }
+  
+  
+  .indoorVirtual{
+  
+    width:80%;
+    height:80%;
+    margin-left:10%;
+    margin-right:auto;
+  }
+  
+  .maps{
+    width:60%;
+    height:600px;
+    padding:50px;
+    
+  
+  }
+  
+  .maps iframe{
+    margin-left:auto;
+    margin-right:auto;
+    height:100%;
+    width:80%;
+    border-radius: 25px;
+    
+  }
+  
+  .Lokacija{
+    display:flex;
+    justify-content: space-between;
+    text-align:center;
+    width:100%;
+    
+  }
+  
+  .lokacijaText{
+    width:40%;
+    color:white;
+    margin:5%;
+  }
+  
+  .lokacijaText p{
+    font-size:22px;
+  }
+  
+  .topMusk{
+    height:20%;
+  }
+  
+  .middleMusk{
+    height:40%;
+    font-size:14px;
+    display:block;
+    
+  }
+  
+  .middleMusk li{
+    text-align: left;
+  }
+  
+  
+  
+  .bottomMusk{
+    height: 40%;
+    
+    
+  }
+  .bottomMusk span{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    
+    margin-top:50%;
+  }
+  
+  .obrazi{
+    width:100%;
+    height:auto;
+    
+    
+  }
+  
+  .obraz{
+    width:10%;
+    height:10%;
+    margin:auto;
+    transition:1s;
+    
+   
+    
+  }
+  
+  .obraz:hover{
+    transform: scale(1.1)
+  }
+  
+  .obrazSlika{
+    height:60%;
+    width:100%;
+    
+  }
+  
+  .obrazSlika img{
+    width:70%;
+    height:100%;
+    border-radius:50%;
+    margin-left:15%;
+  
+  }
+  
+  .obrazText{
+    height:40%;
+    width:100%;
+    text-align: center;
+    color:white;
+    font-size:auto;;
+  }
+  
+  .obrazIme{
+    padding-top:5%;
+    font-size:20px;
+    font-weight: bold;
+    
+  }
+  
+  .topObraz{
+    display:flex;
+    margin:auto;
+    
+  }
+  .middleObraz{
+    display:flex;
+    margin:auto;
+    background-image: url(./components/images/logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat:no-repeat;
+  }
+  
+  .bottomObraz{
+    display:flex;
+    
+  }
+  .legenda{
+   text-align: center;
+   color:white;
+  }
+  .legenda h2{
+    color:#2c699f;
+  }
+  .pravila{
+    display:flex;
+    justify-content: space-between;
+    height:auto;
+    text-align: justify;
+  }
+  
+  .pravila h2{
+    color:#2c699f;
+  }
+  
+  .pravilo{
+    margin-left:auto;
+    margin-right:auto;
+    width:auto;
+    height:auto;
+    
+  }
+  
+  .pravilo p{
+    color:white;
+    font-weight: bold;
+    font-size:110%;
+  }
+  
+  .pravilo li{
+    color:white;
+    font-size:110%;
+    text-align: left;
+  }
+  
+  .splosniSpopadi h3{
+    color:white;
+  }
+  
+  .splosniSpopadi p{
+    color:white;
+    font-size: 18px;
+  }
+  .splosniText p{
+    color:white;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .discord{
+    width:100%;
+    display:flex;
+  }
+  
+  .DiscordInvite-root{
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  
+  .opremaOpis{
+  width:100%;
+  height: 800px;
+  
+  }
+  
+  .triOpreme{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .oprema{
+    width:20%;
+    height:350px;
+    background-color:#161616;
+    margin-left: auto;
+    margin-right:auto;
+    transition:0.5s;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center;
+    border-radius:30%;
+    position: relative;
+    }
+  
+  
+    
+  
+  .oprema p {
+  
+  color:white;
+  margin-top:40%;
+  width:90%;
+  margin-right:auto;
+  margin-left:auto;
+  text-align: center;
+  font-size:150%;
+  }
+  
+  
+  
+  .mask{
+    background-image: url(./components/images/mask.png);
+  }
+  
+  .vest{
+    background-image: url(./components/images/vest.png);
+  }
+  
+  .rifle{
+    background-image:url(./components/images/rifle.png);
+  }
+  .oblacila{
+    background-image:url(./components/images/oblacila.png);
+  }
+  
+  .dmr{
+    background-image:url(./components/images/dmr.png);
+  }
+  
+  .sniper{
+    background-image:url(./components/images/sniper.png);
+    
+  }
+  
+  .sposodnaSlika{
+    width:60%;
+  
+  }
+  
+  .sposodniText{
+    width:40%;
+    text-align: center;
+    font-size:120%;
+    color:white;
+  }
+  
+  .opremaPaketi{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    height:auto;
+  }
+  
+  .opremaPaket{
+    z-index: 10;
+    width:30%;
+    height:700px;
+    border:1px solid white;
+    margin:auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor:pointer;
+    transition:1s ease;
+    position: inherit;
+    display:block;
+    color:white;
+  }
+  .opremaPaket h1{
+    font-size:250%;
+  z-index: 1;
+  
+  }
+  .opremaTop{
+    height:10%;
+    width:100%;
+    margin-top:2%;
+    margin-bottom:2%;
+    
+  }
+  
+  
+  .opremaMiddle{
+    height:65%;
+    width:100%;
+    margin-right:auto;
+    margin-left:auto;
+  }
+  
+  .middleLeftPicture{
+    width:30%;
+    height:200px;
+    display:none;
+  }
+  .opremaMiddle img{
+    height:auto;
+    width:100%;
+    
+  }
+  
+  .middleRightPicture{
+    width:30%;
+    height:200px;
+    display:none;
+  }
+  
+  .opremaPaket ul{
+  
+    margin-left:auto;
+    margin-right:auto;
+      ;
+  }
+  
+  .opremaPaket p,li{
+    font-size:160%;
+    text-align:center;
+  }
+  
+  .asoltPaket{
+    
+    background-image: url(./components/images/poza1_low_opac_2.png);
+    
+  }
+  
+  .dmrPaket{
+    background-image: url(./components/images/poza3_low_opac_2.png);
+  }
+  
+  .sniperPaket{
+    
+    background-position-y: bottom;
+    background-image: url(./components/images/poza2_low_opac_2.png);
+  }
+  
+  .opremaPaketSlike{
+    display:flex;
+    width:100%;
+  }
+  
+  .opremaPaketSlika{
+    display:none;
+    transition:1s;
+    margin-left:auto;
+  margin-right:auto;
+  width:30%;
+  height:200px;
+  }
+  
+  .opremaPaketSlike img{
+  
+  height:90%;
+  
+  }
+  
+  .clickable{
+    width:100%;
+    height:auto;
+    
+  }
+  .clickable img{
+    width:75px;
+    height:85px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    transition:0.5s;
+  }
+  
+  .clickable img:hover{
+    opacity:0.4;
+  }
+  
+  
+  
+  .delPaketa img{
+    width:100%;
+    height:auto;
+    display:none;
+  
+  }
+  
+}
+
+
+
+
+
+
+
