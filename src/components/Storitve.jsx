@@ -253,7 +253,7 @@ function Storitve() {
 
 
             <div className="opremaPaket dmrPaket" onClick={(event) => extend(event.target.className)}>
-              <div className="opremaTop"><h1>DESIGNATED MARKSMAN</h1></div>
+              <div className="opremaTop"><h1>DMR</h1></div>
               
               <div className="opremaMiddle">
                 <div className="middleLeftPicture"><img src={sniper}/></div>
