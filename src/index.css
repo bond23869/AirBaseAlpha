@@ -1221,12 +1221,19 @@ height:90%;
 }
 
 
+.delPaketa{
+  display:inline;
+  width:25%;
+  height:40%;
+}
 
 .delPaketa img{
-  width:100%;
+  width:90%;
   height:auto;
   display:none;
-
+  margin-right:auto;
+  margin-left:auto;
+  
 }
 
 
