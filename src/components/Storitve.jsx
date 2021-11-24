@@ -6,25 +6,19 @@ import sniper from "./images/sniper.png";
 
 import click from "./images/whiteClick.png";
 import mask from "./images/mask.png";
-import bb36 from "./images/036.jpg";
-import bb28 from "./images/028.jpg";
-import bb40 from "./images/040.jpg";
-import midCaps from "./images/2xmidCAp.jpg";
-import highCap from "./images/higcap.jpg";
-import sniperMag from "./images/sniperMag.jpg";
+import bb36 from "./images/036.png";
+import bb28 from "./images/028.png";
+import bb40 from "./images/040.png";
+import midCaps from "./images/2xmidCAp.png";
+import highCap from "./images/higcap.png";
+import sniperMag from "./images/sniperMag.png";
 import rifle from "./images/rifle.png";
 import dmr from "./images/dmr.png";
 import MediaQuery from "react-responsive";
 
 function Storitve() {
 
- 
-  
-  
-
   const extend = (object) => {
-    
-    
    
     var asoltPaket = document.getElementsByClassName('asoltPaket')[0];
     var dmrPaket = document.getElementsByClassName('dmrPaket')[0];
