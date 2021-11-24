@@ -101,7 +101,7 @@ code {
 .bKontakt a{
   cursor:pointer;
   margin-left:10px;
-  color:white;
+
   
 }
 .bKontakt a:hover{
@@ -158,9 +158,13 @@ html{
   text-align: right;
   vertical-align: middle;;
 }
+.cenik{
+  display:flex;
+  width:100%;
+}
 
 .cenik ul{
-  width:40%;
+  width:100%;
   margin:auto;
 }
 .cenik li{
@@ -204,7 +208,7 @@ font-size:120%;
   display: block;
 }
 .footer, .page-wrap:after {
-  height: 100px; 
+  height: 200px; 
 }
 
 .footer{
@@ -230,6 +234,8 @@ margin-bottom:8%;
   text-align:center;
     
 }
+
+
 
 .blockOfOpis p{
 width:auto;
@@ -296,15 +302,18 @@ h1{
   margin-right:auto;
 }
 
-.boxy embed{
-  margin:auto;
-}
+
 
 .boxy{
   margin-left:auto;
   margin-right:auto;
   width:20%;
   display: block;
+}
+.boxy embed{
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
 }
 
 
@@ -622,9 +631,19 @@ border-radius: 25px;;
   background-size: cover;
 }
 
+.spicyFooter{
+  display:flex;
+  width:70%;
+}
+
 .spicyFooter div{
   vertical-align: top;
   width:30%;
+}
+
+.socialniMediji img{
+  width:35px;
+  height:35px;
 }
 
 .footerLokacija{
@@ -1110,11 +1129,12 @@ font-size:150%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  cursor:pointer;
+  
   transition:1s ease;
   position: inherit;
   display:block;
   color:white;
+  
 }
 .opremaPaket h1{
   font-size:250%;
@@ -1206,6 +1226,7 @@ height:90%;
   width:100%;
   height:auto;
   
+  
 }
 .clickable img{
   width:75px;
@@ -1214,6 +1235,7 @@ height:90%;
   margin-right:auto;
   display:block;
   transition:0.5s;
+  cursor:pointer;
 }
 
 .clickable img:hover{
@@ -1235,6 +1257,74 @@ height:90%;
   margin-left:auto;
   
 }
+
+.inlineDiv{
+  display:block;
+  width:50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1268,7 +1358,7 @@ height:90%;
 
 @media (max-width:450px){
   #secondTitle{
-    font-size:64px;
+    font-size:48px;
     margin-bottom:4%;
   }
   
@@ -1384,6 +1474,8 @@ height:90%;
     vertical-align: middle;;
   }
   
+ 
+
   .cenik ul{
     width:40%;
     margin:auto;
@@ -1430,7 +1522,7 @@ height:90%;
     display: block;
   }
   .footer, .page-wrap:after {
-    height: 100px; 
+    height: 200px; 
   }
   
   .footer{
@@ -1445,16 +1537,22 @@ height:90%;
   margin-bottom:8%;
   }
   
+  .opis{
+    height:900px;
+  }
+
   .blockOfOpis{
     
-    display: inline-block;
-    margin-left:13%;
-    width:30%;
-    height:auto; 
+    display: block;
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20%;
     padding: 1em;
-    vertical-align: top;
     text-align:center;
-      
+    background-color: #161616;
+    border-radius:25px;
+    padding:1em;
   }
   
   .blockOfOpis p{
@@ -1463,6 +1561,7 @@ height:90%;
   font-size:20px;
   color:white;
   font-family: Arial, Helvetica, sans-serif;
+  
   }
   
   #blueTitle{
@@ -1506,8 +1605,8 @@ height:90%;
   
   .fourHorseman{
     
-    display:flex;
-    justify-content: space-between;
+    display:block;
+    
     width:90%;
     margin-right:auto;
     margin-left:auto;
@@ -1522,17 +1621,18 @@ height:90%;
     margin-right:auto;
   }
   
-  .boxy embed{
-    margin:auto;
-  }
+  
   
   .boxy{
     margin-left:auto;
     margin-right:auto;
-    width:20%;
+    width:100%;
     display: block;
   }
-  
+  .boxy embed{
+    margin-left:auto;
+    margin-right:auto;
+  }
   
   .soldier{
     background-image: url("./components/images/airsoft-1.jpg");
@@ -1541,7 +1641,7 @@ height:90%;
     background-attachment: fixed;
     background-size: cover;
     
-    height: 1000px;
+    height: 600px;
     width:100%;
   }
   
@@ -1569,9 +1669,9 @@ height:90%;
   
   .del2{
    
-  background-image: url(./components/images/poza3_low_opac.png), url(./components/images/poza2_low_opac.png);
+  background-image: url(./components/images/poza3_low_opac.png);
   background-repeat:no-repeat, no-repeat;
-  background-position: 105% 40%,-30%,35%;
+  background-position: center;
   background-size:contain;
   opacity:1;
   
@@ -1600,17 +1700,16 @@ height:90%;
   
   .Storitve{
     width:100%;
-    display:flex;
-    justify-content: space-between;
-    height:800px;
+    display:block;
+    height:auto;
     
     
   }
   
   .paket{
     
-    width:18%;
-    height:650px;
+    width:80%;
+    height:500px;
     padding:10px;
     border-radius: 25px;
     border: 3px solid white;
@@ -1619,15 +1718,15 @@ height:90%;
     animation: fadeIn 3s;
     color:white;
     font-size:24px;
-    margin-bottom:3%;	
+    margin-bottom:10%;	
+    margin-right:auto;
+    margin-left:auto;
     text-align: center;
     
     transition:1s;
   }
   
-  .leftBoy{
-    margin-left:10%;
-  }
+  
   .rightBoy{
     margin-right:10%;
   }
@@ -1687,7 +1786,7 @@ height:90%;
   }
   
   .storitveButton a{
-    font-size:1.3vw;
+    font-size:24px;
     transition:0.3s;
     height:60%;
     border-radius:10px;
@@ -1848,10 +1947,25 @@ height:90%;
     background-size: cover;
   }
   
+  .spicyFooter{
+    width:70%;
+    display:block;
+  }
+  
   .spicyFooter div{
+    display:block;
     vertical-align: top;
     width:30%;
+    width:100%;
   }
+  
+  .socialniMediji img{
+    width:35px;
+    height:35px;
+    display:inline-block;
+    margin:0;
+  }
+  
   
   .footerLokacija{
     text-align:middle;

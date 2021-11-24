@@ -13,6 +13,7 @@ import { Link, withRouter } from "react-router-dom";
 import MediaQuery from "react-responsive";
 
 
+
 function ONas() {
 
 
@@ -42,9 +43,11 @@ function ONas() {
         </div>
       </div>
 
+      <MediaQuery minWidth={451}>
       <div className="soldier">
 
       </div>
+      </MediaQuery>
       <div >
 
         <div className=" upPad"><h1 id="secondTitle"> NAJ METKI LETIJO</h1></div>
@@ -71,9 +74,9 @@ function ONas() {
           <span className="stretch"></span>
         </div>
 
-
+        <MediaQuery minWidth={451}>
         <div className="middlePicture"></div>
-
+        </MediaQuery>
 
         <div className="upPad"><h1>STORITVE</h1></div>
 
@@ -142,23 +145,25 @@ function ONas() {
           </div>
         </div>
 
+      <MediaQuery minWidth={451}>
         <div className="thirdPicture">
 
         </div>
-
+      </MediaQuery>
 
       </div>
 
+    {/*
       <div className="Lokacija upPad miniDog">
         <Maps />
         <div className="lokacijaText">
           <h1>LOKACIJA</h1>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem dolorum nobis consequatur labore suscipit facilis et dicta, quidem ducimus iure possimus veniam explicabo quod temporibus impedit eum dolor vel perspiciatis!</p>
+          <p>Nahajamo se v tvoji mami</p>
         </div>
 
       </div>
-
-      <div className="rezervacija downDog">
+    */}
+      <div className="rezervacija downDog upDog">
         <h2>Rezervirajte svoj termin</h2>
         <div class="buttons">
           <div class="containerButton">
@@ -167,6 +172,10 @@ function ONas() {
         </div>
 
       </div>
+
+
+    
+      
     </div>
     
   );

@@ -11,7 +11,7 @@ function Footer() {
       <footer className="py-5 bg-dark">
         <div className="container spicyFooter">
           
-            <div>
+            <div className="socialniMediji">
             <h6>SOCIAL NETWORKS</h6>
             <a href="https://www.instagram.com/airbasealpha/"><img src={instagram} alt="instagram"></img></a>
             <a href="https://www.facebook.com/airbasealfa/"><img src={facebook} alt="facebook"></img></a>

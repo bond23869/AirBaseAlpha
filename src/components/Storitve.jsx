@@ -36,8 +36,8 @@ function Storitve() {
     var opremaSlikeDmr = document.getElementsByClassName('delPaketaSlika1');
     var opremaSlikeSniper = document.getElementsByClassName('delPaketaSlika2');
 
-    if (object.includes('asoltPaket')) {
-
+    if (object.includes('asolt')) {
+        console.log(object);
       
       if (asoltPaket.style.width === "80%") {
         dmrPaket.style.display = "block";
@@ -60,7 +60,7 @@ function Storitve() {
         middleText[0].style.justifyContent="space-between";
         Array.prototype.forEach.call(opremaSlike,function(el){
 
-          el.style.display="inline-block";
+          el.style.display="block";
   
         });
       }
@@ -69,7 +69,7 @@ function Storitve() {
 
 
     }
-    else if (object.includes('dmrPaket')) {
+    else if (object.includes('dmr')) {
       if (asoltPaket.style.display === "none") {
         asoltPaket.style.display = "block";
         sniperPaket.style.display = "block";
@@ -91,13 +91,13 @@ function Storitve() {
         middleText[1].style.justifyContent="space-between";
         Array.prototype.forEach.call(opremaSlikeDmr,function(el){
 
-          el.style.display="inline-block";
+          el.style.display="block";
   
         });
       }
     }
 
-    else if (object.includes('sniperPaket')) {
+    else if (object.includes('sniper')) {
       if (asoltPaket.style.display === "none") {
         asoltPaket.style.display = "block";
         dmrPaket.style.display = "block";
@@ -220,23 +220,27 @@ function Storitve() {
               <h2>Samo specifičen del opreme</h2>
               <h3>Lahko si sposodite vse od baterije za repliko</h3>
               <h3>do zaščitne maske</h3>
+              <h2 className="upMinierDog" style={{ color: '#2c699f' }}>CENIK</h2>
               <div className="cenik upMinierDog">
-                <h2 style={{ color: '#2c699f' }}>CENIK</h2>
-                <ul>
+                
+                <div className="inlineDiv"><ul>
                   <li>Renta replike Assault: 10€</li>
                   <br />
                   <li>Renta zaščitne maske: 5€</li>
                   <br />
                   <li>Renta zaščitnih očal: 5€</li>
                   <br />
-                  <li>Renta baterije 7,4V: 5€</li>
+
+                </ul></div>
+                <div className="inlineDiv">
+                <ul>
+                <li>Renta baterije 7,4V: 5€</li>
                   <br />
                   <li>Renta baterije 11,1V: 5€</li>
                   <br />
                   <li>Nakup metkov: 5€</li>
-
-
-                </ul>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -244,12 +248,12 @@ function Storitve() {
 
         </div>
         <div>
-          <div className="minierDog upPad">
+          <div className="minierDog upDog">
             <h2>Sposodite si paket</h2>
           </div>
           <div className="opremaPaketi">
 
-            <div className="opremaPaket asoltPaket" onClick={(event) => extend(event.target.className)}>
+            <div className="opremaPaket asoltPaket" >
               <div className="opremaTop"><h1>SOLDIER</h1></div>
               <div className="opremaMiddle">
                 
@@ -277,13 +281,13 @@ function Storitve() {
                   
               </div>
               
-              <div className="clickable">
-                <img src={click}/>
+              <div className="clickable" >
+                <img className="asolt" src={click} onClick={(event) => extend(event.target.className)}/>
               </div>
             </div>
 
 
-            <div className="opremaPaket dmrPaket" onClick={(event) => extend(event.target.className)}>
+            <div className="opremaPaket dmrPaket" >
               <div className="opremaTop"><h1>DMR</h1></div>
               
               <div className="opremaMiddle">
@@ -312,13 +316,13 @@ function Storitve() {
                 
               </div>
               <div className="clickable">
-                <img src={click}/>
+                <img className="dmr" src={click} onClick={(event) => extend(event.target.className)}/>
               </div>
             </div>
 
 
 
-            <div className="opremaPaket sniperPaket" onClick={(event) => extend(event.target.className)}>
+            <div className="opremaPaket sniperPaket" >
               <div className="opremaTop"><h1>SNIPER</h1></div>
               <div className="opremaMiddle">
               <p>V PAKETU DOBITE:</p>
@@ -343,7 +347,7 @@ function Storitve() {
                 </div>
               </div>
               <div className="clickable">
-                <img src={click}/>
+                <img className="sniper" src={click} onClick={(event) => extend(event.target.className)}/>
               </div>
             </div>
 
