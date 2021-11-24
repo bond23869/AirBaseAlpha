@@ -14,6 +14,7 @@ import highCap from "./images/higcap.jpg";
 import sniperMag from "./images/sniperMag.jpg";
 import rifle from "./images/rifle.png";
 import dmr from "./images/dmr.png";
+import MediaQuery from "react-responsive";
 
 function Storitve() {
 
@@ -163,7 +164,7 @@ function Storitve() {
             </div>
 
             <div className="bottomMusk">
-              <span className="flyToTrening middle"><Link to="ekipniSpopadi" spy={true} smooth={true}>SPOPADI</Link></span>
+              <span className="flyToTrening middle"><Link to="splosniSpopadi" spy={true} smooth={true}>SPOPADI</Link></span>
             </div>
           </div>
 
@@ -174,7 +175,7 @@ function Storitve() {
 
             </div>
             <div className="bottomMusk">
-              <span className="flyToTrening "><Link to="splosniSpopadi" spy={true} smooth={true}>SPOSOJA OPREME</Link></span>
+              <span className="flyToTrening "><Link to="ekipniSpopadi" spy={true} smooth={true}>SPOSOJA OPREME</Link></span>
             </div>
           </div>
         </div>
@@ -213,7 +214,9 @@ function Storitve() {
         <div className="storTitle"><h1>SPOSOJA OPREME</h1></div>
         <div className="ekipniPhoto"></div>
         <div className="sposojaText upMinierDog">
-          <h2>SPOSODITE SI OPREMO!</h2>
+          
+        <MediaQuery minWidth={851}>
+        <h2>SPOSODITE SI OPREMO!</h2>
           <div className="Lokacija upMinierDog">
             <div className="sposodnaSlika"><img src={sposoja}></img></div>
             <div className="sposodniText">
@@ -245,6 +248,43 @@ function Storitve() {
             </div>
           </div>
 
+      </MediaQuery>
+
+      <MediaQuery maxWidth={850}>
+      <h2>SPOSODITE SI OPREMO!</h2>
+          <div className="Lokacija upMinierDog">
+            
+            <div className="sposodniText">
+              <h2>Samo specifičen del opreme</h2>
+              <h3>Lahko si sposodite vse od baterije za repliko</h3>
+              <h3>do zaščitne maske</h3>
+              <h2 className="upMinierDog" style={{ color: '#2c699f' }}>CENIK</h2>
+              <div className="cenik upMinierDog">
+                
+                <div className="inlineDiv"><ul>
+                  <li>Renta replike Assault: 10€</li>
+                  <br />
+                  <li>Renta zaščitne maske: 5€</li>
+                  <br />
+                  <li>Renta zaščitnih očal: 5€</li>
+                  <br />
+
+                </ul></div>
+                <div className="inlineDiv">
+                <ul>
+                <li>Renta baterije 7,4V: 5€</li>
+                  <br />
+                  <li>Renta baterije 11,1V: 5€</li>
+                  <br />
+                  <li>Nakup metkov: 5€</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+      </MediaQuery>           
 
         </div>
         <div>

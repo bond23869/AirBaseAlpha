@@ -43,7 +43,7 @@ function ONas() {
         </div>
       </div>
 
-      <MediaQuery minWidth={451}>
+      <MediaQuery minWidth={851}>
       <div className="soldier">
 
       </div>
@@ -74,7 +74,7 @@ function ONas() {
           <span className="stretch"></span>
         </div>
 
-        <MediaQuery minWidth={451}>
+        <MediaQuery minWidth={851}>
         <div className="middlePicture"></div>
         </MediaQuery>
 

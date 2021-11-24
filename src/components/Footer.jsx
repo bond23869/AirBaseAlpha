@@ -11,7 +11,7 @@ function Footer() {
       <footer className="py-5 bg-dark">
         <div className="container spicyFooter">
           
-            <div className="socialniMediji">
+            <div className="socialniMediji miniDog">
             <h6>SOCIAL NETWORKS</h6>
             <a href="https://www.instagram.com/airbasealpha/"><img src={instagram} alt="instagram"></img></a>
             <a href="https://www.facebook.com/airbasealfa/"><img src={facebook} alt="facebook"></img></a>
@@ -20,9 +20,9 @@ function Footer() {
             
           
 
-            <div>
+            <div className="miniDog">
             <h6>KONTAKT</h6>
-            <p>Email: airsoftbasealpha@gmail.com</p>
+            <p>airsoftbasealpha@gmail.com</p>
             <p>Tel: +386 41 566 716</p>
             </div>
             

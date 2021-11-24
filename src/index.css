@@ -161,6 +161,7 @@ html{
 .cenik{
   display:flex;
   width:100%;
+  
 }
 
 .cenik ul{
@@ -1258,9 +1259,11 @@ height:90%;
   
 }
 
+
 .inlineDiv{
   display:block;
   width:50%;
+  
 }
 
 
@@ -1356,7 +1359,7 @@ height:90%;
 
 
 
-@media (max-width:450px){
+@media (max-width:850px){
   #secondTitle{
     font-size:48px;
     margin-bottom:4%;
@@ -1522,7 +1525,7 @@ height:90%;
     display: block;
   }
   .footer, .page-wrap:after {
-    height: 200px; 
+    height: auto; 
   }
   
   .footer{
@@ -1740,7 +1743,7 @@ height:90%;
     
     padding-top:10%;
     font-size:90%;
-    height:40%;
+    height:auto;
   }
   
   
@@ -1786,7 +1789,7 @@ height:90%;
   }
   
   .storitveButton a{
-    font-size:24px;
+    font-size:6vw;
     transition:0.3s;
     height:60%;
     border-radius:10px;
@@ -1958,12 +1961,19 @@ height:90%;
     width:30%;
     width:100%;
   }
-  
+
+  .spicyFooter h6{
+    font-size:110%;
+    font-weight: bold;
+    color:#2c699f
+  }
+ 
   .socialniMediji img{
     width:35px;
     height:35px;
     display:inline-block;
-    margin:0;
+    margin-top:0;
+    margin-bottom:5%;
   }
   
   
@@ -1975,6 +1985,8 @@ height:90%;
   .storitveHeader{
     width:60%;
     margin-top:5%;
+    margin-left:auto;
+    margin-right:auto;
   }
   
   .storitveHeader p{
@@ -2104,9 +2116,11 @@ height:90%;
   }
   
   .indoorPoligonText{
-    display: inline-block;
-     width:40%;
-     height:500px;
+    display:block;
+     width:80%;
+     height:auto;
+     text-align: left;
+     margin:auto;
     }
     
    
@@ -2124,7 +2138,7 @@ height:90%;
   }
   
   .indoorPoligonText p{
-    width:80%;
+    width:100%;
     text-align: justify;
     font-size:140%;
     color:white;
@@ -2302,20 +2316,23 @@ height:90%;
     color:#2c699f;
   }
   .pravila{
-    display:flex;
-    justify-content: space-between;
+    display: block;
+    
     height:auto;
     text-align: justify;
   }
   
   .pravila h2{
     color:#2c699f;
+    margin-top:25%;
   }
   
   .pravilo{
+    display:block;
+
     margin-left:auto;
     margin-right:auto;
-    width:auto;
+    width:90%;
     height:auto;
     
   }
@@ -2428,25 +2445,27 @@ height:90%;
   }
   
   .sposodniText{
-    width:40%;
+    width:80%;
     text-align: center;
     font-size:120%;
     color:white;
+    margin-right:auto;
+    margin-left:auto;
   }
   
   .opremaPaketi{
     width:100%;
-    display:flex;
-    justify-content: space-between;
+    display:block;
     height:auto;
   }
   
   .opremaPaket{
     z-index: 10;
-    width:30%;
-    height:700px;
+    width:80%;
+    height:600px;
     border:1px solid white;
     margin:auto;
+    margin-bottom:10%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -2569,6 +2588,12 @@ height:90%;
   
   }
   
+
+  .inlineDiv{
+    text-align: left;
+
+  }
+
 }
 
 

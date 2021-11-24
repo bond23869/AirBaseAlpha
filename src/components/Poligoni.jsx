@@ -2,40 +2,54 @@ import React from "react";
 import indoorSlika from "./images/testIndoorPhoto.jpg";
 import pravljicna from "./images/pravljicna3.JPG";
 import Slider from "./Slider.jsx";
+import MediaQuery from "react-responsive";
 
 function Poligoni() {
   return (
     <div className="contact">
-      
+
       <div className="storTitle minierDog upMinierDog">
-          <h1>OUTDOOR POLIGON PRAVLJIČNA DEŽELA</h1>
-      </div>
-      
-    <div className="indoorPoligon miniDog">
-      <div className="indoorPoligonText">
-        <p className="upDog">Naš prvi outdoor poligon je pravljična dežela v Škofji Loki. </p>
-        <p>Vsebuje objekte, ki imajo tudi zgornje nadstropje.</p>
-        <p> Poligon je primeren za vse tipe replik od assualta do sniperja</p>
-      </div>
-      <div className="indoorPoligonSlika">
-        <img className="indoorSlika" src={pravljicna}/>
-      </div>
-      
-    </div>
-
-    <div className="minierDog">
-      <h2> GALERIJA OUTDOOR</h2>
-      
-    </div>
-    <div className="downDog">
-    <Slider />
-      
+        <h1>OUTDOOR POLIGON PRAVLJIČNA DEŽELA</h1>
       </div>
 
 
+      <MediaQuery maxWidth={850}>
+        <div className="indoorPoligon miniDog">
+          <div className="indoorPoligonText">
+            <p className="upDog">Naš prvi outdoor poligon je pravljična dežela v Škofji Loki. </p>
+            <p>Vsebuje objekte, ki imajo tudi zgornje nadstropje.</p>
+            <p> Poligon je primeren za vse tipe replik od assualta do sniperja</p>
+          </div>
+          
+        </div>
+      </MediaQuery>
+
+      <MediaQuery minWidth={851}>
+        <div className="indoorPoligon miniDog">
+          <div className="indoorPoligonText">
+            <p className="upDog">Naš prvi outdoor poligon je pravljična dežela v Škofji Loki. </p>
+            <p>Vsebuje objekte, ki imajo tudi zgornje nadstropje.</p>
+            <p> Poligon je primeren za vse tipe replik od assualta do sniperja</p>
+          </div>
+          <div className="indoorPoligonSlika">
+            <img className="indoorSlika" src={pravljicna} />
+          </div>
+        </div>
+      </MediaQuery>
+
+      <div className="minierDog">
+        <h2> GALERIJA OUTDOOR</h2>
+
+      </div>
+      <div className="downDog">
+        <Slider />
+
+      </div>
 
 
-    {/*
+
+
+      {/*
 
       <div className=" miniDog">
       <div className="storTitle">
@@ -69,7 +83,7 @@ function Poligoni() {
       </div>
       */}
     </div>
-    
+
   );
 }
 
