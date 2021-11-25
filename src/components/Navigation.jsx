@@ -12,7 +12,7 @@ import menu from "./images/menu.png";
 function Navigation(props) {
   return (
     <>
-      <MediaQuery maxWidth={450}>
+      <MediaQuery maxWidth={850}>
         <div className="navigation">
 
           <div className="blackBar">
@@ -43,7 +43,7 @@ function Navigation(props) {
 
 
 
-      <MediaQuery minWidth={451}>
+      <MediaQuery minWidth={851}>
         <div className="navigation">
 
           <div className="blackBar">
