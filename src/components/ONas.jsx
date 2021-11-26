@@ -11,6 +11,7 @@ import training from "./images/ar-min.jpg";
 import Maps from "./Maps";
 import { Link, withRouter } from "react-router-dom";
 import MediaQuery from "react-responsive";
+import Swipers from "./Swiper.jsx";
 
 
 
@@ -80,6 +81,8 @@ function ONas() {
 
         <div className="upPad"><h1>STORITVE</h1></div>
 
+
+        <MediaQuery minWidth={851}>
         <div className="Storitve upPad downDog">
           <div className="paket leftBoy" >
             <div className="paketNaslov miniDog"><p>SPOSOJA OPREME</p></div>
@@ -144,6 +147,14 @@ function ONas() {
             </div>
           </div>
         </div>
+      </MediaQuery>
+
+
+      <MediaQuery maxWidth={850}>
+      
+      <Swipers></Swipers>
+
+      </MediaQuery>
 
       <MediaQuery minWidth={451}>
         <div className="thirdPicture">

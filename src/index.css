@@ -891,7 +891,10 @@ margin-top:20px;
   text-align: left;
 }
 
-
+.swiper-pagination-bullet {
+  opacity:1;
+  background-color:white;
+}
 
 .bottomMusk{
   height: 40%;
@@ -1398,8 +1401,8 @@ height:90%;
     width:20%;
   }
   .blackMenu img{
-    height:65%;
-    width:65%;
+    height:40px;
+    width:40px;
   }
   
   .bKontakt{
@@ -2075,13 +2078,18 @@ height:90%;
   .storTitle{
   width:100%;
   background-color:#161616;
-  height:100px;
+  height:auto;
   display:inline-block;
   vertical-align: center;
+  
   }
   
   .storTitle h1{
   margin-top:20px;
+  font-size:8vw;
+  }
+  h2{
+    font-size:8vw;
   }
   
   .treningPhoto{
@@ -2193,17 +2201,20 @@ height:90%;
   }
   
   .Lokacija{
-    display:flex;
-    justify-content: space-between;
+    display:block;
     text-align:center;
-    width:100%;
+    width:80%;
     
   }
   
   .lokacijaText{
-    width:40%;
+    width:100%;
     color:white;
     margin:5%;
+  }
+
+  .lokacijaText h1{
+    font-size:40px;
   }
   
   .lokacijaText p{
@@ -2248,7 +2259,7 @@ height:90%;
   }
   
   .obraz{
-    width:10%;
+    width:90%;
     height:10%;
     margin:auto;
     transition:1s;
@@ -2257,9 +2268,7 @@ height:90%;
     
   }
   
-  .obraz:hover{
-    transform: scale(1.1)
-  }
+ 
   
   .obrazSlika{
     height:60%;
@@ -2592,6 +2601,14 @@ height:90%;
   .inlineDiv{
     text-align: left;
 
+  }
+
+  .obraziMobile{
+    display:block;
+    width:80%;
+    height:auto;
+    margin-right:auto;
+    margin-left:auto;
   }
 
 }

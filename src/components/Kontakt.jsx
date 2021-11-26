@@ -3,6 +3,7 @@ import Maps from "./Maps";
 import jan from "./images/jan.jpg";
 import blaz from "./images/blaz.jpg";
 import miha from "./images/miha.jpg";
+import MediaQuery from "react-responsive";
 
 function Kontakt() {
   return (
@@ -11,9 +12,23 @@ function Kontakt() {
       <div className="storTitle">
         <h1>KONTAKT</h1>
       </div>
+      <MediaQuery minWidth={850}>
+        <div className="obrazi miniDog upPad">
+          <div className="topObraz">
 
-      <div className="obrazi miniDog upPad">
-        <div className="topObraz">
+          </div>
+          <div className="middleObraz">
+
+
+          </div>
+          <div className="bottomObraz ">
+
+          </div>
+        </div>
+      </MediaQuery>
+
+      <MediaQuery maxWidth={849}>
+        <div className="obraziMobile">
           <div className="obraz">
             <div className="obrazSlika">
               <img src={jan}></img>
@@ -24,8 +39,17 @@ function Kontakt() {
               <p>Discord: Alphasniper#0783</p>
             </div>
           </div>
-        </div>
-        <div className="middleObraz">
+          <div className="obraz">
+            <div className="obrazSlika">
+              <img src={miha}></img>
+            </div>
+            <div className="obrazText">
+              <p className="obrazIme">Miha Podobnik</p>
+              <p>Discord Admin</p>
+              <p>Discord: B3#0932</p>
+            </div>
+          </div>
+
           <div className="obraz">
             <div className="obrazSlika">
               <img src={jan}></img>
@@ -36,19 +60,8 @@ function Kontakt() {
               <p>Discord: Švic Majstr#2822</p>
             </div>
           </div>
-          <div className="obraz" style={{margin:'0% 26.5% 0% 0%'}}>
-            <div className="obrazSlika">
-              <img src={miha}></img>
-            </div>
-            <div className="obrazText">
-              <p className="obrazIme">Miha Podobnik</p>
-              <p>Discord Admin</p>
-              <p>Discord: B3#0932</p>
-            </div>
-          </div>
-        </div>
-        <div className="bottomObraz ">
-          <div className="obraz" style={{margin:'3% 0% 0% 33%'}}>
+
+          <div className="obraz">
             <div className="obrazSlika">
               <img src={blaz}></img>
             </div>
@@ -58,7 +71,8 @@ function Kontakt() {
               <p>Discord: Chief51#5390</p>
             </div>
           </div>
-          <div className="obraz" style={{margin:'3% 0% 0% 13%'}}>
+
+          <div className="obraz">
             <div className="obrazSlika">
               <img src={jan}></img>
             </div>
@@ -68,8 +82,10 @@ function Kontakt() {
               <p>Discord: swayze#7846</p>
             </div>
           </div>
+
         </div>
-      </div>
+
+      </MediaQuery>
 
       <div className="Lokacija upPad miniDog">
         <Maps />
