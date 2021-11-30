@@ -137,11 +137,11 @@ function Kontakt() {
       </MediaQuery>
 
       <div className="Lokacija upPad miniDog">
-        <Maps />
         <div className="lokacijaText">
           <h1>LOKACIJA PISARNE</h1>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem dolorum nobis consequatur labore suscipit facilis et dicta, quidem ducimus iure possimus veniam explicabo quod temporibus impedit eum dolor vel perspiciatis!</p>
         </div>
+        <Maps />
 
       </div>
 

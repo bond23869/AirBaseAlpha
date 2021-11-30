@@ -51,10 +51,12 @@ function ONas() {
       </MediaQuery>
       <div >
 
+      <MediaQuery minWidth={851}>
         <div className=" upPad"><h1 id="secondTitle"> NAJ METKI LETIJO</h1></div>
         <div className="fourHorseman downDog">
 
 
+        
           <div className="boxy">
             <embed className="runningMan" src={running} width="200px" height="200px" alt="active" />
 
@@ -64,6 +66,38 @@ function ONas() {
             <embed src={quality} width="200px" height="200px" alt="Quality" />
             <p>Nova in kvalitetna oprema za izposojo</p>
           </div>
+        
+        
+          <div className="boxy">
+            <embed src={meh} width="200px" height="200px" alt="fun" />
+            <p> Veliko zabave, užitka, taktike in še več</p>
+          </div>
+          <div className="boxy">
+            <embed src={safety} width="200px" height="200px" alt="Safety" />
+            <p>Zagotovljena maksimalna varnost</p>
+          </div>
+          <span className="stretch"></span>
+        
+        </div>
+      </MediaQuery>
+
+      <MediaQuery maxWidth={850}>
+        <div className=" upPad"><h1 id="secondTitle"> NAJ METKI LETIJO</h1></div>
+        <div className="fourHorseman downDog">
+
+
+        <div className="boxRows">
+          <div className="boxy">
+            <embed className="runningMan" src={running} width="200px" height="200px" alt="active" />
+
+            <p>Podpiramo šport, naravo in zdravje</p>
+          </div>
+          <div className="boxy">
+            <embed src={quality} width="200px" height="200px" alt="Quality" />
+            <p>Nova in kvalitetna oprema za izposojo</p>
+          </div>
+        </div>
+        <div className="boxRows upPad">
           <div className="boxy">
             <embed src={meh} width="200px" height="200px" alt="fun" />
             <p> Veliko zabave, užitka, taktike in še več</p>
@@ -74,6 +108,8 @@ function ONas() {
           </div>
           <span className="stretch"></span>
         </div>
+        </div>
+      </MediaQuery>
 
         <MediaQuery minWidth={851}>
         <div className="middlePicture"></div>

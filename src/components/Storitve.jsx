@@ -189,7 +189,7 @@ function Storitve() {
           <h2 className="miniDog">Spopadi, kjer so vabljeni vsi airsoft navdušenci!</h2>
           <p>VSAK VIKEND!</p>
           <p>Dopoldanski in Popoldanski termin</p>
-          <p>Več na discordu </p>
+          <p>Več na discordu...</p>
           
         </div>
 

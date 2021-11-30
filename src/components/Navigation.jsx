@@ -46,8 +46,15 @@ function Navigation(props) {
               <img src={menu} onClick={dropThatMenu}></img>
             </div>
           </div>
-          <div className="mobileMenu">
+          <div className="mobileMenu menuAnimation">
             <ul className="styleless">
+
+              <li onClick={byeMenu}>
+              <Link className="" to="/">
+                      O Nas
+                      <span className="sr-only">(current)</span>
+                    </Link>
+              </li>
               <li onClick={byeMenu}>
                 <Link className="" to="/storitve">
                   Storitve
