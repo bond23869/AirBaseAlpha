@@ -3,6 +3,7 @@ import indoorSlika from "./images/testIndoorPhoto.jpg";
 import pravljicna from "./images/pravljicna3.JPG";
 import Slider from "./Slider.jsx";
 import MediaQuery from "react-responsive";
+import SwiperPoligonSlike from "./SwiperPoligonSlike";
 
 function Poligoni() {
   return (
@@ -22,6 +23,10 @@ function Poligoni() {
           </div>
           
         </div>
+
+        <div className="poligonSlike">
+          <SwiperPoligonSlike/>
+        </div>
       </MediaQuery>
 
       <MediaQuery minWidth={851}>
@@ -35,16 +40,20 @@ function Poligoni() {
             <img className="indoorSlika" src={pravljicna} />
           </div>
         </div>
-      </MediaQuery>
 
-      <div className="minierDog">
+        <div className="minierDog">
         <h2> GALERIJA OUTDOOR</h2>
 
       </div>
-      <div className="downDog">
+
+        <div className="downDog">
         <Slider />
 
       </div>
+      </MediaQuery>
+
+      
+      
 
 
 

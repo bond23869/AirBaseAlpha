@@ -10,6 +10,26 @@ import insta from './images/insta.png';
 import MediaQuery from "react-responsive";
 import menu from "./images/menu.png";
 function Navigation(props) {
+
+  function dropThatMenu() {
+    var mobileMenu = document.getElementsByClassName('mobileMenu')[0];
+
+    if (mobileMenu.style.display === 'block') {
+      mobileMenu.style.display = 'none'
+      mobileMenu.style.height = '0px';
+    }
+    else {
+      mobileMenu.style.display = 'block';
+      mobileMenu.style.height = 'auto'
+    }
+  }
+
+  function byeMenu(){
+    var mobileMenu = document.getElementsByClassName('mobileMenu')[0];
+
+    mobileMenu.style.display = 'none';
+  }
+
   return (
     <>
       <MediaQuery maxWidth={850}>
@@ -23,8 +43,32 @@ function Navigation(props) {
 
             </div>
             <div className="blackMenu">
-              <img src={menu}></img>
+              <img src={menu} onClick={dropThatMenu}></img>
             </div>
+          </div>
+          <div className="mobileMenu">
+            <ul className="styleless">
+              <li onClick={byeMenu}>
+                <Link className="" to="/storitve">
+                  Storitve
+                </Link>
+              </li>
+              <li onClick={byeMenu}>
+                <Link className="" to="/poligoni">
+                  Poligoni
+                </Link>
+              </li>
+              <li onClick={byeMenu}>
+                <Link className="" to="/pravilnik">
+                  Pravilnik
+                </Link>
+              </li>
+              <li onClick={byeMenu}>
+                <Link className="" to="/kontakt">
+                  Kontakt
+                </Link>
+              </li>
+            </ul>
           </div>
           <nav className="navigationBar">
 

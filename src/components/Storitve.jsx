@@ -125,7 +125,7 @@ function Storitve() {
       <div className="Storitve upPad downDog">
 
         <div className="storitveHeader">
-          <h1>STORITVE</h1>
+          <h1 id="fak">STORITVE</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper a lacus vestibulum sed arcu non odio. Lorem sed risus ultricies tristique nulla. Pharetra sit amet aliquam id diam maecenas ultricies mi eget. Orci eu lobortis elementum nibh tellus. Turpis massa sed elementum tempus egestas. Neque ornare aenean euismod elementum nisi. Phasellus vestibulum lorem sed risus. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. Praesent semper feugiat nibh sed. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper.</p>
         </div>
 
@@ -186,11 +186,11 @@ function Storitve() {
         <div className="storTitle"><h1>SPOPADI</h1></div>
         <div className="splosniPhoto minierDog"></div>
         <div className="splosniText">
-          <h2>Spopadi, kjer so vabljeni vsi airsoft navdušenci!</h2>
-          <p>Redni spopadi se prirejajo vsak vikend</p>
+          <h2 className="miniDog">Spopadi, kjer so vabljeni vsi airsoft navdušenci!</h2>
+          <p>VSAK VIKEND!</p>
           <p>Dopoldanski in Popoldanski termin</p>
-          <p>Več si lahko pogledate na Discordu: </p>
-          <p>Rezervirajte svoje mesto!</p>
+          <p>Več na discordu </p>
+          
         </div>
 
         <div className="discord upMinierDog">
